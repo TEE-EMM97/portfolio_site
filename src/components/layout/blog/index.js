@@ -44,7 +44,7 @@ const Blog = ({pageContext}) => {
         {data.allContentfulFakeBlogPost.edges.map((edge, i) => {
           return (
             <li className="blogs__post" key={i}>
-              <Link to={`/blog/${edge.node.slug}`}>
+              <Link to={`blog/${edge.node.slug}`}>
                 <h5>{edge.node.title} <i className="bi-arrow-right" role="img" aria-label="arrow-right"/></h5>
                 <p>📆 {edge.node.publishDate} • ☕️ {edge.node.blogBody.childMarkdownRemark.timeToRead} MIN READ</p>
                 <p className="excerp">{edge.node.blogBody.childMarkdownRemark.excerpt}</p>
