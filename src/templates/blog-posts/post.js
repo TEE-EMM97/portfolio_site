@@ -47,8 +47,8 @@ const Post = ({ data, pageContext }) => {
           }}
         />
 
-        {next && <Link to={`blog/${next.slug}`}> Next </Link>}
-        {prev && <Link to={`blog/${prev.slug}`}> Prev </Link>}
+        {next && <Link to={`/blog/${next.slug}`}> Next </Link>}
+        {prev && <Link to={`/blog/${prev.slug}`}> Prev </Link>}
       </div>
     </Layout>
   );
