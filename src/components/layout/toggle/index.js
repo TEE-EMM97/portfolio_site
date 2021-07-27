@@ -9,7 +9,7 @@ const Toggle = () => {
   const stateChange = state.isDark ? theme.dark.font : theme.light.font;
   const toggleContainer = "toggle-container";
   return (
-      <div className={stateChange && toggleContainer} style={{ paddingTop: 20, paddingBottom: 20, paddingRight: 20 }}>
+      <div className={stateChange && toggleContainer}>
         <span style={{ color: state.isDark ? 'grey' : 'yellow' }} role='img'>
           ☀︎
         </span>

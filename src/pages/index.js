@@ -23,12 +23,11 @@ const Home = () => {
 
   const toDo = `improve design...`;
   return (
-
     <Layout>
       <Seo siteTitle={data.site.siteMetadata.title} title="Home" />
-        <Hello siteDescription={data.site.siteMetadata.description} />
-        <Skills />
-        <Experience />
+      <Hello siteDescription={data.site.siteMetadata.description} />
+      <Skills />
+      <Experience />
       <Blog />
       <Projects/>
       {/* <div><p><b>{toDo}</b></p></div> */}

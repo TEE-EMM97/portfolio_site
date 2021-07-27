@@ -1,4 +1,11 @@
-  // Projects
+@use "sass:math";
+
+@function toRem($value) {
+  $remValue: math.div($value, 16) + rem;	
+  @return $remValue;
+}
+ 
+ // Projects
   .project {
     .project__list {
       display: flex;
@@ -17,6 +24,7 @@
         font-weight: 700;
         text-decoration: none;
         position: relative;
+        padding-bottom: toRem(5);
 
         i {
           padding-left: .5rem;
@@ -37,15 +45,10 @@
 
         &:hover::after {
           transform: scaleX(1);
-          margin-bottom: -5px;
           transform-origin: left;
         }
       }
-
-      .excerp {
-        margin-top: 1.25rem;
-      }
-
+      
       // Make this list and similar styling to blog with some github icons 
       // Add arrow to projects page
     }

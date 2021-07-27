@@ -1,25 +1,43 @@
+  
+@use "sass:math";
+
+@function toRem($value) {
+  $remValue: math.div($value, 16) + rem;	
+  @return $remValue;
+}
   // Skills
+  .skill {
+    .skills {
+      display: flex;
+      justify-content: space-between;
+      margin-left: auto;
+      margin-right: auto;
+      ul {
+        padding-left: 0;
+      } 
 
-  .skills {
-    display: flex;
-    justify-content: space-between;
+      @media only screen and (max-width: 630px) {
+        flex-wrap: wrap;
+      }
 
-    .skills__type--header {
-      padding-top: 10px;
-      font-weight: 700;
+      &__type {
+        @media only screen and (max-width: 700px) {
+          width: 48%;
+          margin-right: 5px;
+          margin-bottom: 25px;
+        }
+
+       &--header {
+        font-weight: 700;
+        color: #000;
+        text-transform: capitalize;
+    
+        }
+
+        &--item {
+          margin: 3px 0;
+          font-size: 0.9rem;
+        }
+      }
     }
-
-    p {
-      margin-bottom: .5rem;
-      letter-spacing: 1px;
-    }
-  }
-
-  .position {
-    padding-right: 1.5rem;
-  }
-
-  .place-time {
-    display: flex;
-    justify-content: space-between;
   }

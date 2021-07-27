@@ -35,7 +35,7 @@ const Projects = () => {
     <section className="section project">
       <Fade>
         <div className="section__title">
-          <h3>Projects</h3>
+          <h4>projects</h4>
         </div>
         <div className="section__content">
           <ol className="project__list">
@@ -47,7 +47,7 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <h5>{repo.name}</h5>
+                    <h5>{repo.name} <i className="bi-arrow-right" role="img" aria-label="arrow-right"/></h5>
                     <p className="excerp">
                       {repo.description}
                     </p>
@@ -56,6 +56,9 @@ const Projects = () => {
               );
             })}
           </ol>
+          <div className="link-to">
+            <a href="https://github.com/TEE-EMM97" target="_blank" rel="noopener noreferrer">view on github<i className="bi-arrow-right" role="img" aria-label="arrow-right"/></a>
+          </div>
         </div>
       </Fade>
     </section>
