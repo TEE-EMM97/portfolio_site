@@ -12,10 +12,12 @@ const Hello = ({ siteDescription }) => {
 
   //Custom hook to check screensize.
 
-  const [width, setWidth] = useState(window.innerWidth);
+  const isBrowser = typeof window !== 'undefined';
+  const [width, setWidth] = useState( isBrowser ? window.innerWidth : 0);
   const breakpoint = 700;
 
   useEffect(() => {
+    if (!isBrowser) return false;
     const handleWindowResize = () => setWidth(window.innerWidth)
     window.addEventListener("resize", () => setWidth(window.innerWidth));
     // Return a function from the effect that removes the event listener
