@@ -22,7 +22,7 @@ const Hello = ({ siteDescription }) => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
     // Return a function from the effect that removes the event listener
     return () => window.removeEventListener("resize", handleWindowResize);
-  }, [])
+  }, [isBrowser])
 
 
   return (

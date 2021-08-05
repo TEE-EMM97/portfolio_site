@@ -13,7 +13,7 @@ const STYLES = [
 
 const SIZES = ['btn--x--small', 'btn--small', 'btn--medium', 'btn--large'];
 
-const LINKS = ['blog', 'projects', '/', 'mailto:tevmcc@gmail.com'];
+const LINKS = ['blog', 'projects', '/', "mailto:tevmcc@gmail.com"];
 
 const Button = ({
   children,
@@ -41,18 +41,18 @@ const Button = ({
   const checkButtonLink = LINKS.includes(linkTo) ? linkTo : LINKS[0];
 
   return (
+      <a href={`${checkButtonLink}`}>
     <button
       class={`btn ${checkButtonSize} ${checkButtonStyle}`}
       onClick={onClick}
       type={type}
     >
       <div class="button__bg">
-      <a href="mailto:someone@yoursite.com"></a>
-        </div>
-      <Link to={`${checkButtonLink}`}>
+      <a href={'#'}></a>
+      </div>
         {children}
-      </Link>
     </button>
+      </a>
   );
 };
 

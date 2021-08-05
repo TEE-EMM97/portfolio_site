@@ -13,7 +13,7 @@ module.exports = {
   location: "Manchester, UK",
   email: "tevmcc@gmail.com",
   github: "https://github.com/tee-emm97",
-  twitterHandle: "@ibethalo",
+  twitterHandle: "@est_tm97",
   socialMedia: [
     {
       name: "github",
@@ -25,7 +25,7 @@ module.exports = {
     },
     {
       name: "twitter",
-      url: "https://twitter.com/ibethatlo",
+      url: "https://twitter.com/est__tm97",
     },
   ]
 }
