@@ -1,20 +1,72 @@
+@use "sass:math";
+
+@function toRem($value) {
+  $remValue: math.div($value, 16) + rem;
+  @return $remValue;
+}
 
 .intro {
-  font-size: 2.5rem;
-  max-width: 1440px;
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  margin: 0 auto;
-  padding: 100px 170px;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 60%;
+  padding-top: toRem(200);
+  padding-bottom: toRem(200);
+
+  //Mobile
+  @media only screen and (min-width: 209px) and (max-width: 850px) {
+    width: 80%;
+    padding: 0 0 toRem(50) 0;
+  }
 
   .intro__hello {
     display: flex;
     flex-direction: row;
+    font-size: toRem(36);
+    padding-bottom: toRem(100);
 
-    h2 {
-      font-size: 2.5rem;
+    // tablet
+    @media only screen and (min-width: 730px) and (max-width:1024px) {
+      font-size: toRem(30);
+      padding-bottom: toRem(20);
+    }
+
+    @media only screen and (min-width: 375px) and (max-width:729px) {
+      font-size: toRem(28);
+      line-height: 40px;
+      padding-bottom: toRem(30);
+    }
+
+    //Mobile
+    @media only screen and (min-width: 209px) and (max-width:374px) {
+      font-size: toRem(20);
+      line-height: 40px;
+      padding-bottom: toRem(10);
+    }
+  }
+
+
+  .intro__para {
+    font-size: toRem(36);
+    padding-bottom: toRem(100);
+
+    // tablet
+    @media only screen and (min-width: 730px) and (max-width:1024px) {
+      font-size: toRem(30);
+      padding-bottom: toRem(20);
+    }
+
+    @media only screen and (min-width: 375px) and (max-width:729px) {
+      font-size: toRem(28);
+      padding-bottom: toRem(30);
+    }
+
+    //Mobile
+    @media only screen and (min-width: 209px) and (max-width:374px) {
+      font-size: toRem(20);
+      padding-bottom: toRem(10);
     }
   }
 
@@ -23,7 +75,7 @@
     flex-direction: row;
 
     p {
-      font-size: 1.25rem;
+      font-size: toRem(20);
     }
   }
 }

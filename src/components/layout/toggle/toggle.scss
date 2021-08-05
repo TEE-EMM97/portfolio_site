@@ -1,82 +1,87 @@
-.lightmode{
+.lightmode {
   background-color: #999999;
   color: #333;
   transition: background-color 0.25s ease-out;
 }
 
-.darkmode{
+.darkmode {
   background-color: #191919;
   color: #999;
   transition: background-color 0.25s ease-out;
 }
 
 .toggle {
-position: relative;
-padding: 0 4px;
-display: flex;
-align-items:center;
-z-index: 99999;
+  position: relative;
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+  z-index: 99999;
 }
 
 .toggle-container {
-display: flex;
-justify-content: flex-end;
-margin-left:auto
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  padding: 20px 0 20px 20px;
+
+  @media only screen and (min-width: 730px) and (max-width:1024px) {
+    padding: 10px 0 0 0
+  }
 }
 
-.toggle-container > span {
-font-size: 1.2em;
-background: none;
-border: none;
-cursor: pointer;
-transition: color 0.3s ease;
-margin-top: 4px;
-margin-right: 2px;
+.toggle-container>span {
+  font-size: 1.2em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-top: 4px;
+  margin-right: 2px;
 }
 
-.toggle-container > span:last-child {
-margin-top: 5px;
-padding-right: 1rem;
+.toggle-container>span:last-child {
+  margin-top: 5px;
+  padding-right: 1rem;
 }
 
 input[type="checkbox"].checkbox {
-width: 40px;
-height: 18px;
-background: #FBC02D;
-position: relative;
-border-radius: 37px;
--webkit-appearance: none;
--moz-appearance: none;
-appearance: none;
-cursor: pointer;
-vertical-align: 2px;
-outline: none;
+  width: 40px;
+  height: 18px;
+  background: #FBC02D;
+  position: relative;
+  border-radius: 37px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  vertical-align: 2px;
+  outline: none;
 }
 
 
 input[type="checkbox"].checkbox:checked {
-background: rgb(61, 52, 119);
+  background: rgb(61, 52, 119);
 }
 
-input[type="checkbox"].checkbox:checked + label {
-left: 26px;
-background-color: slateblue;
+input[type="checkbox"].checkbox:checked+label {
+  left: 26px;
+  background-color: slateblue;
 }
 
 input[type="checkbox"].checkbox:focus-visible {
-outline: solid 2px white;
+  outline: solid 2px white;
 }
 
-input[type="checkbox"].checkbox + label {
-display: inline-block;
-width: 18px;
-height: 18px;
-border-radius: 50%;
-transition: all 0.3s ease;
-cursor: pointer;
-position: absolute;
-left: 4px;
-opacity: 0.9;
-background-color: #FFEB3B;
-margin: 0;
+input[type="checkbox"].checkbox+label {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: absolute;
+  left: 4px;
+  opacity: 0.9;
+  background-color: #FFEB3B;
+  margin: 0;
 }

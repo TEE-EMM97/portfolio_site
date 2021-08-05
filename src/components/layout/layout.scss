@@ -1,10 +1,16 @@
+@use "sass:math";
+
+@function toRem($value) {
+  $remValue: math.div($value, 16) + rem;
+  @return $remValue;
+}
+
 @import "https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap";
 @import "./hello/hello.scss";
 @import "./skills/skills.scss";
 @import "./experience/experience.scss";
 @import "./blog/blog.scss";
 @import "./projectSect/projects.scss";
-
 
 html {
   -ms-text-size-adjust: 100%;
@@ -34,22 +40,17 @@ header {
   flex-direction: row;
   justify-content: space-between;
 }
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+.site-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
-.content {
-  max-width: 1060px !important;
-  margin: 0 auto;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 25px;
-  padding-right: 25px;
-  text-align: left;
-  flex: 1 0 auto;
-  z-index: 2;
+.main-content {
+  max-width: 1440px;
+  width: 90%;
+  margin: auto;
+  z-index: 9;
 }
 
 .scroll-top-button {
@@ -67,238 +68,79 @@ h1 {
 .section {
   display: flex;
   justify-content: center;
-  height: auto;
-  margin-bottom: 20rem;
+  width: 100%;
+  margin-bottom: toRem(100);
 
-  .section__title {
-    flex-shrink: 0;
+
+  //Mobile - Tablet
+  @media only screen and (min-width: 209px) and (max-width:700px) {
+    width: 90%;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__title {
     width: 200px;
-    margin-right: 70px;
-    text-align: right;
-    font-weight: 700;
+    text-align: left;
     letter-spacing: 2px;
-  }
+    text-transform: capitalize;
+    font-weight: 700;
+    align-self: flex-start;
 
-  .section__content {
-    width: 100%;
-    max-width: 650px;
-    font-size: 1rem;
-  }
-}
-
-
-.emailStyle {
-  line-height: 14px;
-}
-
-.emailStyle a {
-  border-bottom: 3px solid black;
-  text-decoration: none;
-  padding-bottom: 1px;
-  font-size: 1.25rem;
-}
-
-.emailStyle a:hover {
-  background: #000;
-  transition: ease-in 0.2s;
-  color: #fff;
-}
-
-@media only screen and (max-width: 1024px) {
-  .intro {
-    padding: 140px;
-  }
-
-  .xp {
-    min-height: 60vh;
-  }
-
-  .section__content {
-    .jobs {
-      padding-top: 10px;
-    }
-
-    .skills {
-      min-height: 35vh;
-      flex-wrap: wrap;
-    }
-  }
-}
-
-@media only screen and (max-width: 896px) {
-  .intro {
-    padding: 120px;
-    min-height: 65rem;
-  }
-
-  .xp {
-    min-height: 40rem
-  }
-
-  .section__content {
-    .skills {
-      min-height: 20rem;
-      padding-right: 30px;
-    }
-  }
-}
-
-
-
-
-@media only screen and (max-width: 768px) {
-  .intro {
-    padding: 0px;
-    font-size: 2rem;
-
-    .intro__hello h2 {
-      font-size: 2rem;
-    }
-
-    .intro__para {
-      font-size: 1.75rem;
-    }
-
-    .intro__touch {
-      p {
-        font-size: 1rem;
-      }
-
-      span {
-        font-size: 1rem;
-        line-height: 25px !important;
-      }
-
-      .emailStyle {
-        line-height: 20px !important;
-
-        a {
-          font-size: 1rem !important;
-        }
-      }
-    }
-  }
-
-  .xp {
-    min-height: 60vh;
-  }
-
-  .section {
-    display: flex;
-    justify-content: center;
-
-    .section__content {
-      padding-top: 30px;
-      padding-left: 30px;
-    }
-
-    .section__title {
-      text-align: left;
+    //Mobile - Tablet
+    @media only screen and (min-width: 209px) and (max-width: 700px) {
       width: auto;
-      margin-right: 20px;
+      text-align: left;
     }
 
-    .skills {
-      min-height: 20rem;
-      flex-wrap: wrap;
+    >h3 {
+      font-weight: 500;
+    }
+  }
 
-      .skills__type--header {
-        padding-top: 0px;
+  &__content {
+    font-weight: 300;
+    width: 100%;
+    max-width: toRem(650);
+    font-size: toRem(16);
+
+
+    .link-to {
+      text-transform: capitalize !important;
+      font-weight: 700;
+      text-decoration: none;
+      position: relative;
+      padding-bottom: toRem(5);
+      display: inline-block;
+
+      i {
+        padding-left: .5rem;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: #000; // Change this fucking colour dynamically!
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 250ms ease-in-out;
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
       }
     }
 
-    .jobs {
-      position: relative;
-      right: 79px;
-      top: 30px;
-    }
-
-
-    .position {
-      padding: 0;
+    @media only screen and (min-width: 209px) and (max-width:700px) {
+      padding-top: toRem(20);
+      padding-left: toRem(30);
     }
   }
-
-}
-
-@media only screen and (max-width: 667px) {
-  .xp {
-    min-height: 50rem;
-  }
-
-  .section {
-    .skills {
-      min-height: 35rem;
-      flex-wrap: wrap;
-
-      .skills__type--header {
-        padding-top: 0px;
-      }
-    }
-
-    .place-time {
-      flex-direction: column;
-    }
-  }
-}
-
-@media only screen and (max-width: 414px) {
-  .intro {
-    padding: 0;
-  }
-
-  .xp {
-    min-height: 60rem
-  }
-
-  .section {
-    .section__title {
-      margin-right: 0px;
-    }
-
-    .skills {
-      min-height: 40rem;
-      padding-right: 30px;
-    }
-
-    .jobs {
-      position: relative;
-      right: 79px;
-      top: 30px;
-    }
-
-    .place-time {
-      flex-direction: column;
-    }
-  }
-}
-
-
-@media only screen and (max-width: 375px) {
-  .intro {
-    padding: 0;
-  }
-
-  .section {
-    .section__title {
-      margin-right: 0px;
-    }
-
-    .skills {
-      min-height: 60rem;
-      padding-right: 60px;
-    }
-
-    .jobs {
-      position: relative;
-      right: 79px;
-      top: 30px;
-    }
-
-    .place-time {
-      flex-direction: column;
-    }
-  }
-
 
 }

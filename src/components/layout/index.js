@@ -4,8 +4,8 @@ import { Global, css } from '@emotion/react';
 import Context from '../../store/context';
 import { useTheme } from '@emotion/react';
 import Footer from '../common/footer';
-import Particles from './particles'
-import Toggle from '../layout/toggle'
+import Particles from './particles';
+import Toggle from '../layout/toggle';
 import './layout.scss';
 const Layout = ({ children }) => {
   const { state } = useContext(Context);
@@ -29,19 +29,31 @@ const Layout = ({ children }) => {
             color: ${state.isDark ? theme.dark.font : theme.light.font};
           }
 
+          .skill .skills__type--header {
+            color: ${state.isDark ? theme.dark.font : theme.light.font};
+          }
+
           #tsparticles {
-            color: ${state.isDark ? theme.dark.font : theme.light.font} !important;
+            color: ${state.isDark
+              ? theme.dark.font
+              : theme.light.font} !important;
+          }
+
+          .xp .xp__content a::after, .blogs .blogs__posts h5::after, .project .project__list h5:hover::after, .section__content .link-to::after{
+            background: ${state.isDark
+              ? theme.dark.font
+              : theme.light.font} !important;
           }
         `}
       />
-      <div className="stick-foot">
-        <Particles/>
-        <div className="content">
-      <Toggle/>
-          {children}
-        </div>
-          <Footer />
-      </div>
+      <section className="site-wrapper">
+          <Particles />
+          <Toggle />
+          <div className="main-content">
+            {children}
+          </div>
+            <Footer />
+      </section>
     </>
   );
 };

@@ -1,10 +1,17 @@
+@use "sass:math";
+
+@function toRem($value) {
+  $remValue: math.div($value, 16) + rem;
+  @return $remValue;
+}
+
 footer {
   display: flex;
-  max-width: 1060px;
-  width: 100%;
-  margin: 0 auto;
-  padding-bottom: 20px;
+  padding-bottom: toRem(20);
   z-index: 2;
+  font-size: toRem(14);
+  //Stop floating on blog page
+  margin-bottom: 0 !important;
 
   > .footer__socials{
     display: flex;
@@ -14,18 +21,11 @@ footer {
     margin-left: auto;
     //Icon Styling
     i {
-      font-size: 1.5rem;
+      font-size: toRem(16);
       opacity: .5;
       &:hover {
         opacity: 1;
       }
-    }
-  }
-
-  @media only screen and (max-width: 1024px) {
-    footer {
-      padding-left: 25px;
-      padding-right: 25px;
     }
   }
 }

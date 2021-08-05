@@ -6,7 +6,7 @@ const Footer = () => {
   let tempUrlForName = socialData.socialMedia[2].url;
 
   return (
-    <footer>
+    <footer className="main-content">
       <div className="footer__copyright">
         <div className="top">
           <span>Built with GatsbyJS by</span>

@@ -8,7 +8,7 @@ const Experience = () => {
     <section className="section xp">
       <Fade>
         <div className="section__title">
-          <h3>Experience</h3>
+          <h4>experience</h4>
         </div>
         <div className="section__content">
           <div className="xp__content">
@@ -18,18 +18,16 @@ const Experience = () => {
                   <div className="job">
                     <div className="place-time">
                       <div className="company">
-                        <h5>
                           <a
                             href={data.url}
                             target="_blank"
-                            rel="noreferrer"
+                            rel="noopener noreferrer"
                           >
                             {data.company}
                           </a>
-                        </h5>
                       </div>
 
-                      <h6 className="position">{data.position}</h6>
+                      <div className="position">{data.position}</div>
                     </div>
                     <p>{data.time}</p>
                   </div>
@@ -37,10 +35,10 @@ const Experience = () => {
               );
             })}
           </div>
+          <div className="link-to">
+            <a href="https://github.com/TEE-EMM97" target="_blank" rel="noopener noreferrer">view CV<i className="bi-arrow-right" role="img" aria-label="arrow-right"/></a>
         </div>
-        {/* <a href="{{site.resume}}" target="_blank" className="arrow-link">
-          View My Resume
-        </a> */}
+        </div>
       </Fade>
     </section>
   );
