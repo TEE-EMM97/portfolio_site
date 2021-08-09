@@ -21,7 +21,7 @@ const Home = () => {
     }
   `);
 
-  const toDo = `improve design...`;
+  const toDo = `Add further contet for blog posts to get idea for design,sub-title for blog posts for design and work on mobile design`;
   return (
     <Layout>
       <Seo siteTitle={data.site.siteMetadata.title} title="Home" />

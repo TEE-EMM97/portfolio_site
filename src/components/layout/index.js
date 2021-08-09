@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
               : theme.light.font} !important;
           }
 
-          .xp .xp__content a::after, .blogs .blogs__posts h5::after, .project .project__list h5:hover::after, .section__content .link-to::after{
+          .xp .xp__content a::after, .blogs .blogs__posts h5::after, .project .project__list h5:hover::after, .section__content .link-to::after, .prev-post::after, .next-post::after{
             background: ${state.isDark
               ? theme.dark.font
               : theme.light.font} !important;
@@ -48,8 +48,8 @@ const Layout = ({ children }) => {
       />
       <section className="site-wrapper">
           <Particles />
-          <Toggle />
           <div className="main-content">
+          <Toggle />
             {children}
           </div>
             <Footer />

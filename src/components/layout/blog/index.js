@@ -49,7 +49,7 @@ const Blog = ({ pageContext }) => {
                 <li className="blogs__post" key={i}>
                   <Link to={`blog/${edge.node.slug}`}>
                     <h5>
-                      {edge.node.title}{' '}
+                      {edge.node.title}
                       <i
                         className="bi-arrow-right"
                         role="img"
@@ -57,7 +57,7 @@ const Blog = ({ pageContext }) => {
                       />
                     </h5>
                     <p>
-                      📆 {edge.node.publishDate} • ☕️{' '}
+                      📆 {edge.node.publishDate} • ☕️
                       {edge.node.blogBody.childMarkdownRemark.timeToRead} MIN
                       READ
                     </p>
