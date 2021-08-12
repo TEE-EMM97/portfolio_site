@@ -60,12 +60,14 @@ input[type="checkbox"].checkbox {
 
 
 input[type="checkbox"].checkbox:checked {
-  background: rgb(61, 52, 119);
+  background: black
 }
 
 input[type="checkbox"].checkbox:checked+label {
-  left: 26px;
-  background-color: slateblue;
+  transform: translate(22px,0px);
+  border-radius: 100%;
+  background: slateblue;
+  transition: all 0.3s ease;
 }
 
 input[type="checkbox"].checkbox:focus-visible {
@@ -80,7 +82,6 @@ input[type="checkbox"].checkbox+label {
   transition: all 0.3s ease;
   cursor: pointer;
   position: absolute;
-  left: 4px;
   opacity: 0.9;
   background-color: #FFEB3B;
   margin: 0;

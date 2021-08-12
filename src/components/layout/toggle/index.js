@@ -17,7 +17,7 @@ const Toggle = () => {
           <input type="checkbox" name="checkbox" id="checkbox" className="checkbox" onChange={() => dispatch({ type: 'TOGGLE_DARK' })} checked={state.isDark} />
           {/* Below comment removes jsx label warning  */}
           <>{ /* eslint-disable-next-line jsx-a11y/label-has-associated-control */}</>
-          <label htmlFor="checkbox"></label>
+          <label htmlFor="checkbox"/>
         </span>
         <span
             style={{ color: state.isDark ? "slateblue" : "grey" }}

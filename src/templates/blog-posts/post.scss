@@ -14,8 +14,47 @@
   margin-right: auto;
   margin-left: auto;
 
-  .blog-post__hero {
+  hr {
+    border-color: #D2376A;
+  }
+
+  a {
+    color: #D2376A;
+  }
+
+  .tweet-me {
+    font-weight: bold;
+    position: relative;
+    padding-bottom: toRem(5);
+    display: inline-block;
+    width: 148px;
+
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background: #D2376A; 
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 250ms ease-in-out;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+  }
+
+  &__hero {
     min-height: toRem(600);
+  }
+
+  &__content{
+    margin-top: toRem(20);
   }
 
   > * {
@@ -30,6 +69,8 @@
 .pagination-container {
   display: flex;
   flex-direction: row;
+  padding-bottom: toRem(50);
+  align-content: center;
   justify-content: space-evenly;
 
   .next-post {
@@ -51,8 +92,8 @@
       bottom: 0;
       width: 100%;
       height: 2px;
-      background: #000; // Change this fucking colour dynamically!
       transform: scaleX(0);
+      background: #D2376A; 
       transform-origin: right;
       transition: transform 250ms ease-in-out;
     }
@@ -62,7 +103,6 @@
       transform-origin: left;
     }
   }
-
   .prev-post {
     text-transform: capitalize !important;
     font-weight: 700;
@@ -82,7 +122,7 @@
       bottom: 0;
       width: 100%;
       height: 2px;
-      background: #000; // Change this fucking colour dynamically!
+      background: #D2376A;  
       transform: scaleX(0);
       transform-origin: left;
       transition: transform 250ms ease-in-out;

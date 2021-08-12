@@ -40,6 +40,13 @@ header {
   flex-direction: row;
   justify-content: space-between;
 }
+
+a:hover {
+  color: #D2376A !important;
+  border: #D2376A;
+}
+
+
 .site-wrapper {
   display: flex;
   min-height: 100vh;
@@ -104,6 +111,7 @@ header {
     width: 100%;
     max-width: toRem(650);
     font-size: toRem(16);
+    padding-top: toRem(5);
 
 
     .link-to {
@@ -125,7 +133,7 @@ header {
         bottom: 0;
         width: 100%;
         height: 2px;
-        background: #000; // Change this fucking colour dynamically!
+        background: #D2376A !important;
         transform: scaleX(0);
         transform-origin: right;
         transition: transform 250ms ease-in-out;

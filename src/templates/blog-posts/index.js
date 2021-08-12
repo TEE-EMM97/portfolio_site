@@ -5,16 +5,17 @@ import './post.scss';
 import '../../components/layout/layout.scss';
 // import { convertToBgImage } from 'gbimage-bridge';
 // import BackgroundImage from 'gatsby-background-image';
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Seo from '../../components/seo';
 
 export const query = graphql`
   query ($slug: String!) {
-    contentfulFakeBlogPost(slug: { eq: $slug }) {
+    contentfulBlogPost(slug: { eq: $slug }) {
       id
       title
       publishDate(formatString: "MMMM Do, YYYY")
       updatedAt(formatString: "MMMM Do, YYYY")
+      author
       coverImages {
         id
         gatsbyImageData(
@@ -38,38 +39,61 @@ const Post = ({ data, pageContext }) => {
   console.log(data);
   console.log(pageContext);
   const { next, prev } = pageContext;
-  const blogTitle = data.contentfulFakeBlogPost.title;
-  const blogImage = getImage(
-    data.contentfulFakeBlogPost.coverImages.gatsbyImageData
+  const blogTitle = data.contentfulBlogPost.title;
+  const blogHero = getImage(
+    data.contentfulBlogPost.coverImages.gatsbyImageData
   );
-  const image = blogImage;
-  // const bgImage = convertToBgImage(image);
-  const author = data.contentfulFakeBlogPost.author;
+  const author = data.contentfulBlogPost.author;
   const timeToRead =
-    data.contentfulFakeBlogPost.blogBody.childMarkdownRemark.timeToRead;
-  const publishDate = data.contentfulFakeBlogPost.publishDate;
+    data.contentfulBlogPost.blogBody.childMarkdownRemark.timeToRead;
+  const publishDate = data.contentfulBlogPost.publishDate;
+  const subTitle = data.contentfulBlogPost.subTitle;
+
+  console.log(
+    `Stuff ${blogTitle},${author}, ${timeToRead}, ${publishDate}, ${subTitle}`
+  );
 
   return (
     <Layout>
       <Seo title={blogTitle} />
       <div className="blog-post">
-        <GatsbyImage className="blog-post__hero" image={image} alt={author} />
+        <GatsbyImage
+          className="blog-post__hero"
+          image={blogHero}
+          alt={author}
+        />
         <h1 className="blog-post__title">{blogTitle}</h1>
         <h6 className="blog-post__details">
           📆 {publishDate} • ☕️ {`${timeToRead} min to read`}
         </h6>
-        <div className="blog-post__content"
+        <hr />
+
+        <div
+          className="blog-post__content"
           dangerouslySetInnerHTML={{
-            __html:
-              data.contentfulFakeBlogPost.blogBody.childMarkdownRemark.html,
+            __html: data.contentfulBlogPost.blogBody.childMarkdownRemark.html,
           }}
         />
+
+        <hr />
+        <div className="tweet-me">
+          <a
+            href="https://twitter.com/intent/tweet?screen_name=est_tm97&ref_src=twsrc%5Etfw"
+            className="twitter-mention-button"
+            data-text="Hey, I think you&#39;re wrong and here&#39;s the reason why..."
+            data-show-count="false"
+            target="__blank"
+          >
+            Tweet to @est_tm97
+          </a>
+          <script async src="https://platform.twitter.com/widgets.js"></script>
+        </div>
       </div>
       <div className="pagination-container">
         <div className="prev-post">
           <h5>
             {prev && (
-              <Link to={`/blog/${prev.slug}`}>
+        <Link to={`/blog/${prev.slug}`}>
                 <i
                   className="bi-arrow-left"
                   role="img"

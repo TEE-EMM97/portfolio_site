@@ -6,7 +6,7 @@ import '../layout.scss';
 const Blog = ({ pageContext }) => {
   const data = useStaticQuery(graphql`
     query {
-      allContentfulFakeBlogPost(
+      allContentfulBlogPost(
         sort: { fields: [publishDate], order: DESC }
         limit: 4
       ) {
@@ -44,7 +44,7 @@ const Blog = ({ pageContext }) => {
         </div>
         <div className="section__content">
           <ol className="blogs__posts">
-            {data.allContentfulFakeBlogPost.edges.map((edge, i) => {
+            {data.allContentfulBlogPost.edges.map((edge, i) => {
               return (
                 <li className="blogs__post" key={i}>
                   <Link to={`blog/${edge.node.slug}`}>
@@ -57,9 +57,8 @@ const Blog = ({ pageContext }) => {
                       />
                     </h5>
                     <p>
-                      📆 {edge.node.publishDate} • ☕️
-                      {edge.node.blogBody.childMarkdownRemark.timeToRead} MIN
-                      READ
+                      📆 {edge.node.publishDate} • ☕️ {edge.node.blogBody.childMarkdownRemark.timeToRead} min
+                      read
                     </p>
                     <p className="excerp">
                       {edge.node.blogBody.childMarkdownRemark.excerpt}
@@ -69,16 +68,6 @@ const Blog = ({ pageContext }) => {
               );
             })}
           </ol>
-          <div className="link-to">
-            <Link to={`/blog/`}>
-              View all blogs
-              <i
-                className="bi-arrow-right"
-                role="img"
-                aria-label="arrow-right"
-              />
-            </Link>
-          </div>
         </div>
       </Fade>
     </section>
