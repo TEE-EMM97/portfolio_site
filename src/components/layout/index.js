@@ -5,6 +5,7 @@ import Context from '../../store/context';
 import { useTheme } from '@emotion/react';
 import Footer from '../common/footer';
 import Particles from './particles';
+import Scroll from '../common/scroll'
 import Toggle from '../layout/toggle';
 import './layout.scss';
 const Layout = ({ children }) => {
@@ -42,7 +43,8 @@ const Layout = ({ children }) => {
           <div className="main-content">
           <Toggle />
             {children}
-          </div>
+        </div>
+        <Scroll/>
             <Footer />
       </section>
     </>

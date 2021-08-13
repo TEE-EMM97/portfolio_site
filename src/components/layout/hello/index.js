@@ -4,7 +4,7 @@ import Button from '../../common/button';
 import Mail from '../../common/contact';
 import React, { useState, useEffect } from 'react';
 
-const Hello = ({ siteDescription}) => {
+const Hello = ({ siteDescription }) => {
   const variants = {
     rotate: [0, -25, 0, -25, 0],
   };
@@ -40,20 +40,16 @@ const Hello = ({ siteDescription}) => {
         </h1>
 
         <p className="intro__para">{siteDescription}</p>
-          <div className="intro__touch">
-        <Mail
-          email
-          subject="Hello & Welcome"
-          body="Hello world!"
-        >
+        <div className="intro__touch">
+          <Mail email subject="Hello & Welcome" body="Hello world!">
             <Button
               children={`Get in Touch!`}
               linkTo={`/`}
               buttonStyle={`btn--checkBlog`}
               buttonSize={width < breakpoint ? 'btn--x--small' : 'btn--medium'}
             />
-        </Mail>
-          </div>
+          </Mail>
+        </div>
       </Fade>
     </section>
   );

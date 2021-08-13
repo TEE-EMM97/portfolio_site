@@ -3,7 +3,6 @@ import socialData from '../../../config';
 import './footer.scss'
 
 const Footer = () => {
-  let tempUrlForName = socialData.socialMedia[2].url;
 
   return (
     <footer className="main-content">

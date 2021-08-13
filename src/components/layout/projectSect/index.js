@@ -28,9 +28,7 @@ const Projects = () => {
   `);
 
   const repos = data.allGithubData.edges[0].node.data.user.pinnedItems.nodes;
-
-  console.log('Repos in projectSect' + repos);
-
+  
   return (
     <section className="section project">
       <Fade>

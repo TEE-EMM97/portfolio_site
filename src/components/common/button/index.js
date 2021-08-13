@@ -6,12 +6,11 @@ import './button.scss';
 
 const STYLES = [
   'btn--checkBlog',
-  'btn--goBackH',
-  'btn--goPrevBlog',
-  'btn--goNextBlog',
+  'btn--scroll',
+  'btn--d-none'
 ];
 
-const SIZES = ['btn--x--small', 'btn--small', 'btn--medium', 'btn--large'];
+const SIZES = ['btn--x--small', 'btn--chev','btn--small', 'btn--medium', 'btn--large'];
 
 const LINKS = ['blog', 'projects', '/', '#'];
 

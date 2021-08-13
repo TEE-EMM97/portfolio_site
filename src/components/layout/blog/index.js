@@ -3,7 +3,7 @@ import { useStaticQuery, graphql, Link } from 'gatsby';
 import Fade from 'react-reveal/Fade';
 import '../layout.scss';
 
-const Blog = ({ pageContext }) => {
+const Blog = () => {
   const data = useStaticQuery(graphql`
     query {
       allContentfulBlogPost(
@@ -34,8 +34,7 @@ const Blog = ({ pageContext }) => {
     }
   `);
 
-  console.log('Blogs:', data);
-  console.log('Here', pageContext);
+  const blogPosts = data.allContentfulBlogPost.edges
   return (
     <section className="section blogs">
       <Fade>
@@ -44,7 +43,7 @@ const Blog = ({ pageContext }) => {
         </div>
         <div className="section__content">
           <ol className="blogs__posts">
-            {data.allContentfulBlogPost.edges.map((edge, i) => {
+            {blogPosts.map((edge, i) => {
               return (
                 <li className="blogs__post" key={i}>
                   <Link to={`blog/${edge.node.slug}`}>
@@ -57,7 +56,11 @@ const Blog = ({ pageContext }) => {
                       />
                     </h5>
                     <p>
-                      📆 {edge.node.publishDate} • ☕️ {edge.node.blogBody.childMarkdownRemark.timeToRead} min
+                      <span role="img" aria-label="emoji-calendar">
+                        📆
+                      </span>{' '}
+                      {edge.node.publishDate} • ☕️{' '}
+                      {edge.node.blogBody.childMarkdownRemark.timeToRead} min
                       read
                     </p>
                     <p className="excerp">

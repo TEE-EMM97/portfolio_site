@@ -51,6 +51,18 @@
       transition: all .3s ease-in-out;
     }
 
+    &--chev {
+      width: 64px;
+      height: 64px;
+      font-size: 14px;
+      align-items: center;
+    }
+
+    &--d-none {
+      display: none;
+    }
+
+
     &--x--small {
       width: 160px;
       height: 64px;
@@ -100,6 +112,81 @@
       text-transform: capitalize;
       color: var(--white) !important;
       z-index: 100;
+
+      #text:hover {
+        color: aqua;
+      }
+
+      &:hover .button__bg {
+        transform: scale3d(1.2, 1.2, 1);
+      }
+
+      &:hover .button__bg::before {
+        transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+        transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1);
+      }
+
+      &:hover .button__bg::after {
+        opacity: 1;
+        transition-duration: 0.01s;
+        transition-delay: 0.3s;
+      }
+
+      .button__bg {
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        background-color: var(--primary);
+        border-radius: 50px;
+        overflow: hidden;
+        transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+        z-index: -1;
+
+        &::before,
+        &::after {
+          content: '';
+          position: absolute;
+          background: #000;
+        }
+
+        &::before {
+          width: 110%;
+          height: 0;
+          padding-bottom: 110%;
+          top: 50%;
+          left: 50%;
+          border-radius: 50%;
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1);
+        }
+
+        &::after {
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          transition: opacity 0.3s;
+        }
+      }
+    }
+
+    &--scroll {
+      // Start of Button Hover Styling.
+
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: center;
+      mix-blend-mode: difference;
+
+      font-weight: 700;
+      text-transform: capitalize;
+      color: var(--white) !important;
+      z-index: 100;
+
+      transition: ease-in 5s;
 
       #text:hover {
         color: aqua;

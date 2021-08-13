@@ -3,11 +3,10 @@ import { graphql, Link } from 'gatsby';
 import Layout from '../../components/layout';
 import './post.scss';
 import '../../components/layout/layout.scss';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { getImage } from 'gatsby-plugin-image';
 import Seo from '../../components/seo';
 import Hero from '../../components/common/hero';
 import Bio from '../../components/common/bio';
-import Button from '../../components/common/button';
 import PostPagination from '../../components/common/postpagination';
 
 export const query = graphql`
@@ -41,10 +40,9 @@ const Post = (props) => {
   const {
     data: {
       contentfulBlogPost: {
-        id,
         title,
         publishDate,
-        updatedAt,
+        // updatedAt,
         author,
         coverImages: { gatsbyImageData },
         blogBody: {
@@ -65,8 +63,7 @@ const Post = (props) => {
       <div className="blog-post">
         <Hero blogHero={blogHero} author={author} className="blog-post__hero" />
         <h1 className="blog-post__title">{blogTitle}</h1>
-        <h6 className="blog-post__details">
-          📆 {publishDate} • ☕️ {`${timeToRead} min to read`}
+        <h6 className="blog-post__details"><span role="img" aria-label="emoji-calendar">📆</span> {publishDate} • ☕️ {`${timeToRead} min to read`}
         </h6>
         <hr />
 
@@ -97,7 +94,7 @@ const Post = (props) => {
           <Bio />
         </div>
 
-        <PostPagination next={next} prev={prev}/>
+        <PostPagination next={next} prev={prev} />
       </div>
     </Layout>
   );
