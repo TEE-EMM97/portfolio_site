@@ -21,8 +21,7 @@ This is a clean, minimal, and responsive starter for creating portfolios or blog
 - [x] IE 11 Compliant
 - [x] Firefox Compliant
 - [x] Chrome Compliant
-- [] Responsive
-  - @todo Blog Post Page needs work
+- [x] Responsive
 - [x] SCSS
 - [x] Contentful CMS 
 - [x] Contentful Delivery System(So blogs deliver straight from Contentful)
@@ -35,8 +34,8 @@ This is a clean, minimal, and responsive starter for creating portfolios or blog
 - [ ] Site Favicon
 - [x] Uses Local Storage
 - [x] No Errors (so far)
-- [ ] Newsletter
-- [ ] Components in scope:
+- [ ] Newsletter (@TODO)
+- [x] Components in scope:
   - SEO REACT HELMET
   - Layout
   - Dark/Light Mode
@@ -46,7 +45,6 @@ This is a clean, minimal, and responsive starter for creating portfolios or blog
   - Skills
   - Experience
   - Blogs Post Section
-    - Blog Listing Page
     - Blog Post Page 
   - Github Projects Section
   - Footer
