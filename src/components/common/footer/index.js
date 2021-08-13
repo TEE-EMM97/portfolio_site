@@ -10,9 +10,7 @@ const Footer = () => {
       <div className="footer__copyright">
         <div className="top">
           <span>Built with GatsbyJS by</span>
-        {/* </div> */}
-        {/* <div className="bottom"> */}
-          <a href={tempUrlForName}> @TM97<span role="img" aria-label="emoji-pink-heart-with-arrow-in-the-middle"> 💘</span></a>
+          <a href={'/'}> @TM97<span role="img" aria-label="emoji-pink-heart-with-arrow-in-the-middle"> 💘</span></a>
           <span> {new Date().getFullYear()}</span>
           &copy;
         </div>

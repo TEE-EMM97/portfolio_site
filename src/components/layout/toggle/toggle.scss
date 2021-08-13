@@ -44,10 +44,10 @@
   padding-right: 1rem;
 }
 
-input[type="checkbox"].checkbox {
+input[type="checkbox"].day-night-switch {
   width: 40px;
   height: 18px;
-  background: #FBC02D;
+  background: #ffd058;
   position: relative;
   border-radius: 37px;
   -webkit-appearance: none;
@@ -59,22 +59,22 @@ input[type="checkbox"].checkbox {
 }
 
 
-input[type="checkbox"].checkbox:checked {
-  background: black
+input[type="checkbox"].day-night-switch:checked {
+  background: rgb(77, 66, 149)
 }
 
-input[type="checkbox"].checkbox:checked+label {
+input[type="checkbox"].day-night-switch:checked+label {
   transform: translate(22px,0px);
   border-radius: 100%;
   background: slateblue;
   transition: all 0.3s ease;
 }
 
-input[type="checkbox"].checkbox:focus-visible {
+input[type="checkbox"].day-night-switch:focus-visible {
   outline: solid 2px white;
 }
 
-input[type="checkbox"].checkbox+label {
+input[type="checkbox"].day-night-switch+label {
   display: inline-block;
   width: 18px;
   height: 18px;

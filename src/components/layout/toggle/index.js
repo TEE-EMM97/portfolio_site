@@ -9,15 +9,16 @@ const Toggle = () => {
   const stateChange = state.isDark ? theme.dark.font : theme.light.font;
   const toggleContainer = "toggle-container";
   return (
-      <div className={stateChange && toggleContainer}>
+    <div className={stateChange && toggleContainer}>
+
         <span style={{ color: state.isDark ? 'grey' : 'yellow' }} role='img'>
           ☀︎
         </span>
         <span className="toggle">
-          <input type="checkbox" name="checkbox" id="checkbox" className="checkbox" onChange={() => dispatch({ type: 'TOGGLE_DARK' })} checked={state.isDark} />
+          <input type="checkbox" name="checkbox" id="day-night" className="day-night-switch" onChange={() => dispatch({ type: 'TOGGLE_DARK' })} checked={state.isDark} />
           {/* Below comment removes jsx label warning  */}
           <>{ /* eslint-disable-next-line jsx-a11y/label-has-associated-control */}</>
-          <label htmlFor="checkbox"/>
+          <label htmlFor="day-night-switch"/>
         </span>
         <span
             style={{ color: state.isDark ? "slateblue" : "grey" }}

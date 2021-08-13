@@ -13,7 +13,7 @@ const STYLES = [
 
 const SIZES = ['btn--x--small', 'btn--small', 'btn--medium', 'btn--large'];
 
-const LINKS = ['blog', 'projects', '/', 'mailto:tevmcc@gmail.com'];
+const LINKS = ['blog', 'projects', '/', '#'];
 
 const Button = ({
   children,
@@ -47,7 +47,6 @@ const Button = ({
       type={type}
     >
       <div class="button__bg">
-      <a href="mailto:someone@yoursite.com"></a>
         </div>
       <Link to={`${checkButtonLink}`}>
         {children}

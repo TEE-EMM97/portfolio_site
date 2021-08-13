@@ -98,7 +98,7 @@
 
       font-weight: 700;
       text-transform: capitalize;
-      color: var(--white);
+      color: var(--white) !important;
       z-index: 100;
 
       #text:hover {

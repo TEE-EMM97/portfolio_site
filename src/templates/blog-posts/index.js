@@ -3,10 +3,12 @@ import { graphql, Link } from 'gatsby';
 import Layout from '../../components/layout';
 import './post.scss';
 import '../../components/layout/layout.scss';
-// import { convertToBgImage } from 'gbimage-bridge';
-// import BackgroundImage from 'gatsby-background-image';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Seo from '../../components/seo';
+import Hero from '../../components/common/hero';
+import Bio from '../../components/common/bio';
+import Button from '../../components/common/button';
+import PostPagination from '../../components/common/postpagination';
 
 export const query = graphql`
   query ($slug: String!) {
@@ -35,33 +37,33 @@ export const query = graphql`
   }
 `;
 
-const Post = ({ data, pageContext }) => {
-  console.log(data);
-  console.log(pageContext);
-  const { next, prev } = pageContext;
-  const blogTitle = data.contentfulBlogPost.title;
-  const blogHero = getImage(
-    data.contentfulBlogPost.coverImages.gatsbyImageData
-  );
-  const author = data.contentfulBlogPost.author;
-  const timeToRead =
-    data.contentfulBlogPost.blogBody.childMarkdownRemark.timeToRead;
-  const publishDate = data.contentfulBlogPost.publishDate;
-  const subTitle = data.contentfulBlogPost.subTitle;
+const Post = (props) => {
+  const {
+    data: {
+      contentfulBlogPost: {
+        id,
+        title,
+        publishDate,
+        updatedAt,
+        author,
+        coverImages: { gatsbyImageData },
+        blogBody: {
+          childMarkdownRemark: { html, timeToRead },
+        },
+      },
+    },
+    pageContext: { next, prev },
+  } = props;
 
-  console.log(
-    `Stuff ${blogTitle},${author}, ${timeToRead}, ${publishDate}, ${subTitle}`
-  );
+  const blogTitle = title;
+  const blogHero = getImage(gatsbyImageData);
+  const blogContent = html;
 
   return (
     <Layout>
       <Seo title={blogTitle} />
       <div className="blog-post">
-        <GatsbyImage
-          className="blog-post__hero"
-          image={blogHero}
-          alt={author}
-        />
+        <Hero blogHero={blogHero} author={author} className="blog-post__hero" />
         <h1 className="blog-post__title">{blogTitle}</h1>
         <h6 className="blog-post__details">
           📆 {publishDate} • ☕️ {`${timeToRead} min to read`}
@@ -71,10 +73,9 @@ const Post = ({ data, pageContext }) => {
         <div
           className="blog-post__content"
           dangerouslySetInnerHTML={{
-            __html: data.contentfulBlogPost.blogBody.childMarkdownRemark.html,
+            __html: blogContent,
           }}
         />
-
         <hr />
         <div className="tweet-me">
           <a
@@ -84,40 +85,19 @@ const Post = ({ data, pageContext }) => {
             data-show-count="false"
             target="__blank"
           >
-            Tweet to @est_tm97
+            Tweet me on Twitter
           </a>
+
           <script async src="https://platform.twitter.com/widgets.js"></script>
         </div>
-      </div>
-      <div className="pagination-container">
-        <div className="prev-post">
-          <h5>
-            {prev && (
-        <Link to={`/blog/${prev.slug}`}>
-                <i
-                  className="bi-arrow-left"
-                  role="img"
-                  aria-label="arrow-left"
-                />
-                Prev
-              </Link>
-            )}
-          </h5>
+        <div className="personal">
+          <p>
+            <Link to={'/'}>{author}</Link>
+          </p>
+          <Bio />
         </div>
-        <div className="next-post">
-          <h5>
-            {next && (
-              <Link to={`/blog/${next.slug}`}>
-                Next
-                <i
-                  className="bi-arrow-right"
-                  role="img"
-                  aria-label="arrow-right"
-                />
-              </Link>
-            )}
-          </h5>
-        </div>
+
+        <PostPagination next={next} prev={prev}/>
       </div>
     </Layout>
   );
