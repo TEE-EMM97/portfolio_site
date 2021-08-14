@@ -9,7 +9,7 @@ const PostPagination = (props) => {
     <div className="prev-post">
       {props.prev && (
           <p>
-        <Link to={`/blog/${props.prev.slug}`}>
+        <Link to={`/${props.prev.slug}`}>
             <i
               className="bi-arrow-left"
               role="img"
@@ -23,7 +23,7 @@ const PostPagination = (props) => {
     <div className="next-post">
       {props.next && (
           <p>
-        <Link to={`/blog/${props.next.slug}`}>
+        <Link to={`/${props.next.slug}`}>
             {props.next.slug}
             <i
               className="bi-arrow-right"
