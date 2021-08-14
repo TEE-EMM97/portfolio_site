@@ -1,8 +1,10 @@
 const config = require('./src/config');
-const dotenv = require('dotenv');
+const dotenv = require('dotenv')
 
-if (process.env.NODE_ENV !== 'production') {
-  dotenv.config()
+if (process.env.NODE_ENV === 'production') {
+  dotenv.config({
+    path: `.env.${process.env.NODE_ENV}`
+  })
 }
 
 const { githubApiQuery } = require('./src/utils/github-api.js')

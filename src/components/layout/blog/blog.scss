@@ -1,51 +1,45 @@
 @use "sass:math";
 
 @function toRem($value) {
-  $remValue: math.div($value, 16) + rem;	
+  $remValue: math.div($value, 16) + rem;
   @return $remValue;
 }
 
-// Blogs
-  .blogs {
-    padding-top: 0 !important;
-    .blogs__posts {
-      display: flex;
-      flex-direction: column-reverse;
-      // li {
-      //   &:nth-child(2n + 2) {
-      //     margin: 2rem 0 2rem 0;
-      //     background-color: tomato;
-      //   }
-      // }
+.blogs {
+  padding-top: 0 !important;
 
-      h5 {
-        display: inline-block;
-        font-weight: 700;
-        text-decoration: none;
-        position: relative;
-        padding-bottom: toRem(5);
+  .blogs__posts {
+    display: flex;
+    flex-direction: column-reverse;
 
-        i {
-          padding-left: .5rem;
-        }
+    h5 {
+      display: inline-block;
+      font-weight: 700;
+      text-decoration: none;
+      position: relative;
+      padding-bottom: toRem(5);
 
-        &::after {
-          content: '';
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          width: 100%;
-          height: 2px;
-      background: #D2376A !important; // Change this fucking colour dynamically!
-          transform: scaleX(0);
-          transform-origin: right;
-          transition: transform 250ms ease-in-out;
-        }
+      i {
+        padding-left: .5rem;
+      }
 
-        &:hover::after {
-          transform: scaleX(1);
-          transform-origin: left;
-        }
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: #D2376A !important;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 250ms ease-in-out;
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
       }
     }
   }
+}

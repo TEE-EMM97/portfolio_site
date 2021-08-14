@@ -2,32 +2,6 @@
     --primary: #D2376A;
   }
 
-  // .btn {
-  //   font-family: "Nunito", sans-serif;
-  //   font-weight: 500;
-  //   border-radius: 30px;
-  //   cursor: pointer;
-  //   transition: transform 0.3s ease;
-  //   outline: none;
-  //   border: 0;
-
-  //   &--primary--solid {
-  //     background-color: var(--primary);
-  //     border: none;
-  //     color: var(--white);
-  //   }
-
-  //   &--medium {
-  //     padding: 10px 20px;
-  //     font-size: 18px;
-  //   }
-
-  //   &--large {
-  //     padding: 15px 30px;
-  //     font-size: 20px;
-  //   }
-  // }
-
   a {
     color: inherit;
     &:hover {
@@ -173,7 +147,6 @@
     }
 
     &--scroll {
-      // Start of Button Hover Styling.
 
       display: flex;
       flex-direction: column;

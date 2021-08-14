@@ -5,7 +5,6 @@
   @return $remValue;
 }
  
- // Projects
   .project {
     padding-top: 0 !important;
     .project__list {
@@ -37,7 +36,7 @@
           bottom: 0;
           width: 100%;
           height: 2px;
-          background: #D2376A !important; // Change this fucking colour dynamically!
+          background: #D2376A !important;
           transform: scaleX(0);
           transform-origin: right;
           transition: transform 250ms ease-in-out;
@@ -48,8 +47,5 @@
           transform-origin: left;
         }
       }
-      
-      // Make this list and similar styling to blog with some github icons 
-      // Add arrow to projects page
     }
   }

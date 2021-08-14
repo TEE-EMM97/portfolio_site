@@ -24,15 +24,6 @@ const Button = ({
   buttonStyle,
   buttonSize,
 }) => {
-  /********* 
-   Import {use state} from 'react' to use below
-   *********/
-
-  // const [background, setBackground] = useState('#fdfdfd');
-  // const setAnimation = (background) => {
-  //   setBackground(background)
-  // };
-
   const checkButtonStyle = STYLES.includes(buttonStyle)
     ? buttonStyle
     : STYLES[1];
@@ -42,7 +33,6 @@ const Button = ({
   const checkButtonLink = LINKS.includes(linkTo) ? linkTo : LINKS[0];
 
   return (
-      <a href={`${checkButtonLink}`}>
     <button
       class={`btn ${checkButtonSize} ${checkButtonStyle}`}
       onClick={onClick}
@@ -51,9 +41,9 @@ const Button = ({
       <div class="button__bg">
         </div>
       <Link to={`${checkButtonLink}`}>
-        {children}
+          {children}
+          </Link>
     </button>
-      </a>
   );
 };
 
