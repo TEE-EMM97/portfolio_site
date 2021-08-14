@@ -3,10 +3,10 @@ import { useStaticQuery, graphql, Link } from 'gatsby';
 import Fade from 'react-reveal/Fade';
 import '../layout.scss';
 
-const Blog = ({ pageContext }) => {
+const Blog = () => {
   const data = useStaticQuery(graphql`
     query {
-      allContentfulFakeBlogPost(
+      allContentfulBlogPost(
         sort: { fields: [publishDate], order: DESC }
         limit: 4
       ) {
@@ -34,8 +34,7 @@ const Blog = ({ pageContext }) => {
     }
   `);
 
-  console.log('Blogs:', data);
-  console.log('Here', pageContext);
+  const blogPosts = data.allContentfulBlogPost.edges
   return (
     <section className="section blogs">
       <Fade>
@@ -44,12 +43,12 @@ const Blog = ({ pageContext }) => {
         </div>
         <div className="section__content">
           <ol className="blogs__posts">
-            {data.allContentfulFakeBlogPost.edges.map((edge, i) => {
+            {blogPosts.map((edge, i) => {
               return (
                 <li className="blogs__post" key={i}>
-                  <Link to={`blog/${edge.node.slug}`}>
+                  <Link to={`/${edge.node.slug}`}>
                     <h5>
-                      {edge.node.title}{' '}
+                      {edge.node.title}
                       <i
                         className="bi-arrow-right"
                         role="img"
@@ -57,9 +56,12 @@ const Blog = ({ pageContext }) => {
                       />
                     </h5>
                     <p>
-                      📆 {edge.node.publishDate} • ☕️{' '}
-                      {edge.node.blogBody.childMarkdownRemark.timeToRead} MIN
-                      READ
+                      <span role="img" aria-label="emoji-calendar">
+                        📆
+                      </span>{' '}
+                      {edge.node.publishDate} • ☕️{' '}
+                      {edge.node.blogBody.childMarkdownRemark.timeToRead} min
+                      read
                     </p>
                     <p className="excerp">
                       {edge.node.blogBody.childMarkdownRemark.excerpt}
@@ -69,16 +71,6 @@ const Blog = ({ pageContext }) => {
               );
             })}
           </ol>
-          <div className="link-to">
-            <Link to={`/blog/`}>
-              View all blogs
-              <i
-                className="bi-arrow-right"
-                role="img"
-                aria-label="arrow-right"
-              />
-            </Link>
-          </div>
         </div>
       </Fade>
     </section>

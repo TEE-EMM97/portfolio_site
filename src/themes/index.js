@@ -4,16 +4,10 @@ export const theme = {
     font: '#333',
     background: '#fff',
     div: '#000',
-    menuListBg: '#fff'
   },
   dark: {
     font: '#999',
     background: '#191919',
     div: '#fff',
-    menuListBg: '#000'
-  },
-  scrollLock: {
-    unlocked: 'scroll',
-    locked: 'hidden'
   }
 }

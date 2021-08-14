@@ -8,7 +8,6 @@ import Seo from '../components/seo';
 import Blog from '../components/layout/blog';
 import Projects from '../components/layout/projectSect';
 
-// markup
 const Home = () => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -20,8 +19,7 @@ const Home = () => {
       }
     }
   `);
-
-  const toDo = `improve design...`;
+  
   return (
     <Layout>
       <Seo siteTitle={data.site.siteMetadata.title} title="Home" />
@@ -30,7 +28,6 @@ const Home = () => {
       <Experience />
       <Blog />
       <Projects/>
-      {/* <div><p><b>{toDo}</b></p></div> */}
     </Layout>
   );
 };

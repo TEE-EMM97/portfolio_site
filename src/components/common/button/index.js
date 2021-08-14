@@ -6,14 +6,15 @@ import './button.scss';
 
 const STYLES = [
   'btn--checkBlog',
-  'btn--goBackH',
-  'btn--goPrevBlog',
-  'btn--goNextBlog',
+  'btn--scroll',
+  'btn--d-none'
 ];
 
-const SIZES = ['btn--x--small', 'btn--small', 'btn--medium', 'btn--large'];
+const SIZES = ['btn--x--small', 'btn--chev','btn--small', 'btn--medium', 'btn--large'];
 
-const LINKS = ['blog', 'projects', '/', "mailto:tevmcc@gmail.com"];
+
+const LINKS = ['blog', 'projects', '/', '#'];
+
 
 const Button = ({
   children,
@@ -48,8 +49,8 @@ const Button = ({
       type={type}
     >
       <div class="button__bg">
-      <a href={'#'}></a>
-      </div>
+        </div>
+      <Link to={`${checkButtonLink}`}>
         {children}
     </button>
       </a>

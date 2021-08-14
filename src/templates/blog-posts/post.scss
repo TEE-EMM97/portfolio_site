@@ -1,0 +1,83 @@
+@use "sass:math";
+
+@function toRem($value) {
+  $remValue: math.div($value, 16) + rem;
+  @return $remValue;
+}
+
+.blog-post {
+  min-height: 100vh;
+  width: 100%;
+  max-width: toRem(800);
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+
+  hr {
+    border-color: #D2376A;
+  }
+
+  a {
+    color: #D2376A;
+  }
+
+  button a {
+    color: #fff !important;
+  }
+  
+  .personal {
+    margin-bottom:toRem(50);
+    
+    > p {
+    font-weight: bold;
+    position: relative;
+    padding-bottom: toRem(5);
+    display: inline-block;
+    width: 148px;
+  }
+}
+
+  .tweet-me {
+    font-weight: bold;
+    position: relative;
+    padding-bottom: toRem(5);
+    display: inline-block;
+    width: 148px;
+    
+  
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background: #D2376A; 
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 250ms ease-in-out;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+  }
+
+  &__hero {
+    min-height: toRem(600);
+  }
+
+  &__content{
+    margin-top: toRem(20);
+  }
+
+  > * {
+    margin-bottom: toRem(20);
+  }
+  
+  h1 {
+    font-size: toRem(40);
+  }
+}

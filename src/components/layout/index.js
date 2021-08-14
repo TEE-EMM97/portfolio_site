@@ -5,6 +5,7 @@ import Context from '../../store/context';
 import { useTheme } from '@emotion/react';
 import Footer from '../common/footer';
 import Particles from './particles';
+import Scroll from '../common/scroll'
 import Toggle from '../layout/toggle';
 import './layout.scss';
 const Layout = ({ children }) => {
@@ -20,38 +21,30 @@ const Layout = ({ children }) => {
             margin: 0;
             padding: 0;
           }
-
+          
           body {
             background-color: ${state.isDark
               ? theme.dark.background
               : theme.light.background};
-
-            color: ${state.isDark ? theme.dark.font : theme.light.font};
-          }
-
-          .skill .skills__type--header {
-            color: ${state.isDark ? theme.dark.font : theme.light.font};
+              
+              color: ${state.isDark ? theme.dark.font : theme.light.font};
+              transition: ease-in .2s;
           }
 
           #tsparticles {
             color: ${state.isDark
               ? theme.dark.font
-              : theme.light.font} !important;
-          }
-
-          .xp .xp__content a::after, .blogs .blogs__posts h5::after, .project .project__list h5:hover::after, .section__content .link-to::after{
-            background: ${state.isDark
-              ? theme.dark.font
-              : theme.light.font} !important;
-          }
+          : theme.light.font} !important;
+            }
         `}
       />
       <section className="site-wrapper">
           <Particles />
-          <Toggle />
           <div className="main-content">
+          <Toggle />
             {children}
-          </div>
+        </div>
+        <Scroll/>
             <Footer />
       </section>
     </>
