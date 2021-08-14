@@ -1,10 +1,10 @@
-  
-@use "sass:math";
+  @use "sass:math";
 
-@function toRem($value) {
-  $remValue: math.div($value, 16) + rem;	
-  @return $remValue;
-}
+  @function toRem($value) {
+    $remValue: math.div($value, 16) + rem;
+    @return $remValue;
+  }
+
   // Skills
   .skill {
     .skills {
@@ -12,9 +12,10 @@
       justify-content: space-between;
       margin-left: auto;
       margin-right: auto;
+
       ul {
         padding-left: 0;
-      } 
+      }
 
       @media only screen and (max-width: 630px) {
         flex-wrap: wrap;
@@ -27,10 +28,12 @@
           margin-bottom: 25px;
         }
 
-       &--header {
-        font-weight: 700;
-        text-transform: capitalize;
-    
+        &--header {
+          font-weight: 700;
+          text-transform: capitalize;
+          @media only screen and (min-width: 209px) and (max-width:700px) {
+            font-size: toRem(16);
+          }
         }
 
         &--item {

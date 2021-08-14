@@ -26,9 +26,8 @@ const Scroll = () => {
   }, []);
 
   const chevIcon =  <i className="bi-chevron-up" role="img" aria-label="chevron-up" />
-
   return (
-    <div style={{ position: 'fixed', bottom: 55, right: 50 }}>
+    <div style={{ position: 'fixed', bottom: 55, right: 20, zIndex: 20 }}>
       <Button
         onClick={scrollToTop}
         buttonStyle={isVisable ? ('btn--scroll') : ('btn--d-none')}

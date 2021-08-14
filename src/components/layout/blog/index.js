@@ -46,7 +46,7 @@ const Blog = () => {
             {blogPosts.map((edge, i) => {
               return (
                 <li className="blogs__post" key={i}>
-                  <Link to={`blog/${edge.node.slug}`}>
+                  <Link to={`/${edge.node.slug}`}>
                     <h5>
                       {edge.node.title}
                       <i
