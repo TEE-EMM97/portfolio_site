@@ -12,7 +12,9 @@ const STYLES = [
 
 const SIZES = ['btn--x--small', 'btn--chev','btn--small', 'btn--medium', 'btn--large'];
 
+
 const LINKS = ['blog', 'projects', '/', '#'];
+
 
 const Button = ({
   children,
@@ -40,6 +42,7 @@ const Button = ({
   const checkButtonLink = LINKS.includes(linkTo) ? linkTo : LINKS[0];
 
   return (
+      <a href={`${checkButtonLink}`}>
     <button
       class={`btn ${checkButtonSize} ${checkButtonStyle}`}
       onClick={onClick}
@@ -49,8 +52,8 @@ const Button = ({
         </div>
       <Link to={`${checkButtonLink}`}>
         {children}
-      </Link>
     </button>
+      </a>
   );
 };
 

@@ -21,22 +21,21 @@ This is a clean, minimal, and responsive starter for creating portfolios or blog
 - [x] IE 11 Compliant
 - [x] Firefox Compliant
 - [x] Chrome Compliant
-- [ ] Responsive
-  - @todo iPhone SE screensize
+- [x] Responsive
 - [x] SCSS
 - [x] Contentful CMS 
-- [ ] Contentful Delivery System(So blogs deliver straight from Contentful)
+- [x] Contentful Delivery System(So blogs deliver straight from Contentful)
 - [x] React JavaScript Library
 - [x] Gatsby JS Framework
   - Gatsby Plugins
 - [x] Minimal responsive design - made to customize or tear apart
-- [ ] Pagination logic
-- [ ] SEO (Very Basic SEO, need to add socials)
+- [x] Pagination logic
+- [x] SEO (Very Basic SEO, need to add socials)
 - [ ] Site Favicon
-- [ ] Uses Local Storage
+- [x] Uses Local Storage
 - [x] No Errors (so far)
-- [ ] Newsletter
-- [ ] Components in scope:
+- [ ] Newsletter (@TODO)
+- [x] Components in scope:
   - SEO REACT HELMET
   - Layout
   - Dark/Light Mode
@@ -45,9 +44,9 @@ This is a clean, minimal, and responsive starter for creating portfolios or blog
   - Background
   - Skills
   - Experience
-  - Blogs Page
+  - Blogs Post Section
     - Blog Post Page 
-  - Github Projects Page
+  - Github Projects Section
   - Footer
 
 ## Demo
