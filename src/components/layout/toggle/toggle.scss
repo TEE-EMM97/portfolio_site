@@ -24,6 +24,10 @@
   margin-left: auto;
   padding: 20px 0 20px 20px;
 
+  > .day-night-switch {
+    cursor: pointer;
+  }
+
   @media only screen and (min-width: 730px) and (max-width:1024px) {
     padding: 10px 0 0 0
   }
@@ -33,7 +37,6 @@
   font-size: 1.2em;
   background: none;
   border: none;
-  cursor: pointer;
   transition: color 0.3s ease;
   margin-top: 4px;
   margin-right: 2px;

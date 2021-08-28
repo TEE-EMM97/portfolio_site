@@ -1,0 +1,49 @@
+.rhap_current-time,
+.rhap_total-time,
+.rhap_play-pause-button {
+  color: #D2376A;
+}
+
+.rhap_progress-indicator,
+.rhap_progress-filled {
+  background-color: #D2376A;
+}
+
+.rhap_progress-bar-show-download {
+  background-color: #ff6e9e;
+}
+
+.rhap_download-progress {
+  background-color: #eb3e77;
+}
+
+.song-title-wrapper {
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  color: #D2376A;
+
+  .song-title {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    transform: translateX(50%);
+    /* Apply animation to this element */
+    animation: song-title-wrapper 4s linear infinite alternate;
+  }
+}
+
+/* Move it (define the animation) */
+@keyframes song-title-wrapper {
+  0% {
+    transform: translateX(30%);
+  }
+
+  100% {
+    transform: translateX(-30%);
+  }
+}

@@ -5,15 +5,22 @@ if (process.env.NODE_ENV === 'production') {
   dotenv.config({
     path: `.env.${process.env.NODE_ENV}`
   })
+} else if (process.env.NODE_ENV === 'development') {
+  dotenv.config({
+    path: `.env.${process.env.NODE_ENV}`
+  })
 }
 
 const { githubApiQuery } = require('./src/utils/github-api.js')
 
 module.exports = {
   siteMetadata: {
-    title: config.siteTitle,
-    description: config.siteDescription,
+    title: "@tm97",
+    description:"My name is Tev, I help developers, designers, and SME's bring their ideas to life; on time, and on budget. Powered by VS Code, Figma, and Supermalt.",
     author: config.name,
+    url: "https://tm97.gatsbyjs.io",
+    twitterUsername: "est__tm97",
+    image: "./"
   },
   plugins: [
     {

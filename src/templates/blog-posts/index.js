@@ -29,6 +29,7 @@ export const query = graphql`
       blogBody {
         childMarkdownRemark {
           html
+          excerpt
           timeToRead
         }
       }
@@ -46,7 +47,7 @@ const Post = (props) => {
         author,
         coverImages: { gatsbyImageData },
         blogBody: {
-          childMarkdownRemark: { html, timeToRead },
+          childMarkdownRemark: { html, excerpt , timeToRead },
         },
       },
     },
@@ -54,12 +55,13 @@ const Post = (props) => {
   } = props;
 
   const blogTitle = title;
+  const blogExcerpt = excerpt
   const blogHero = getImage(gatsbyImageData);
   const blogContent = html;
 
   return (
     <Layout>
-      <Seo title={blogTitle} />
+      <Seo title={blogTitle} description={blogExcerpt}/>
       <div className="blog-post">
         <Hero blogHero={blogHero} author={author} className="blog-post__hero" />
         <h1 className="blog-post__title">{blogTitle}</h1>
