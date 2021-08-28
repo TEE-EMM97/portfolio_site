@@ -32,7 +32,9 @@ const Scroll = () => {
         onClick={scrollToTop}
         buttonStyle={isVisable ? ('btn--scroll') : ('btn--d-none')}
         buttonSize={`btn--chev`}
-        children={chevIcon} />
+        children={chevIcon}
+        linkTo={''}
+        />
     </div>
   );
 };

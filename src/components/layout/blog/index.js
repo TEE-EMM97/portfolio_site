@@ -39,7 +39,7 @@ const Blog = () => {
     <section className="section blogs">
       <Fade>
         <div className="section__title">
-          <h4>Blogs</h4>
+          <h4>3. <span>blogs</span></h4>
         </div>
         <div className="section__content">
           <ol className="blogs__posts">

@@ -8,7 +8,7 @@ const Experience = () => {
     <section className="section xp">
       <Fade>
         <div className="section__title">
-          <h4>experience</h4>
+          <h4>2. <span>experience</span></h4>
         </div>
         <div className="section__content">
           <div className="xp__content">

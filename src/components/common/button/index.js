@@ -13,14 +13,14 @@ const STYLES = [
 const SIZES = ['btn--x--small', 'btn--chev','btn--small', 'btn--medium', 'btn--large'];
 
 
-const LINKS = ['blog', 'projects', '/', '#'];
+const LINKS = ['blog', 'projects', '/', '#', ''];
 
 
 const Button = ({
   children,
   type,
   onClick,
-  linkTo,
+  // linkTo,
   buttonStyle,
   buttonSize,
 }) => {
@@ -30,7 +30,7 @@ const Button = ({
 
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
-  const checkButtonLink = LINKS.includes(linkTo) ? linkTo : LINKS[0];
+  // const checkButtonLink = LINKS.includes(linkTo) ? linkTo : LINKS[0];
 
   return (
     <button
@@ -40,9 +40,9 @@ const Button = ({
     >
       <div class="button__bg">
         </div>
-      <Link to={`${checkButtonLink}`}>
+      {/* <Link to={`${checkButtonLink}`}> */}
           {children}
-          </Link>
+          {/* </Link> */}
     </button>
   );
 };
@@ -51,7 +51,7 @@ Button.propTypes = {
   children: PropTypes.string.isRequired,
   buttonStyle: PropTypes.string,
   buttonSize: PropTypes.string,
-  linkTo: PropTypes.string,
+  // linkTo: PropTypes.string,
   type: PropTypes.string,
   onClick: PropTypes.func,
   onMouseValue: PropTypes.string,

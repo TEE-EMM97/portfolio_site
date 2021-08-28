@@ -33,7 +33,7 @@ const Projects = () => {
     <section className="section project">
       <Fade>
         <div className="section__title">
-          <h4>projects</h4>
+          <h4>4. <span>projects</span></h4>
         </div>
         <div className="section__content">
           <ol className="project__list">

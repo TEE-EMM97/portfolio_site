@@ -8,7 +8,7 @@ const Skills = () => {
     <section className="section skill">
       <Fade>
         <div className="section__title">
-          <h4>skills</h4>
+          <h4>1. <span>skills</span></h4>
         </div>
         <div className="section__content">
           <div className="skills">

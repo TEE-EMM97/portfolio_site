@@ -5,8 +5,9 @@ import Context from '../../store/context';
 import { useTheme } from '@emotion/react';
 import Footer from '../common/footer';
 import Particles from './particles';
-import Scroll from '../common/scroll'
+import Scroll from '../common/scroll';
 import Toggle from '../layout/toggle';
+import MusicPlayer from './musicPlayer';
 import './layout.scss';
 const Layout = ({ children }) => {
   const { state } = useContext(Context);
@@ -21,31 +22,41 @@ const Layout = ({ children }) => {
             margin: 0;
             padding: 0;
           }
-          
+
           body {
             background-color: ${state.isDark
               ? theme.dark.background
               : theme.light.background};
+
+            color: ${state.isDark ? theme.dark.font : theme.light.font};
+            transition: ease-in 0.2s;
+          }
+
+          .rhap_container {
+            background-color: ${state.isDark
+              ? theme.dark.background
+          : theme.light.background} !important;
+            box-shadow: 0px 0px 0px 0px
               
-              color: ${state.isDark ? theme.dark.font : theme.light.font};
-              transition: ease-in .2s;
           }
 
           #tsparticles {
             color: ${state.isDark
               ? theme.dark.font
-          : theme.light.font} !important;
-            }
+              : theme.light.font} !important;
+          }
         `}
       />
       <section className="site-wrapper">
-          <Particles />
-          <div className="main-content">
+        <Particles />
+        <div className="main-content">
           <Toggle />
-            {children}
+          {children}
         </div>
-        <Scroll/>
-            <Footer />
+
+        <Scroll />
+        <Footer />
+        <MusicPlayer />
       </section>
     </>
   );
