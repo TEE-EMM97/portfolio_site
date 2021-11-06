@@ -15,7 +15,7 @@ const MusicPlayer = () => {
       <AudioPlayer
         autoPlay={true}
         src={song}
-        loop={true}
+        loop={false}
         layout="horizontal-reverse"
         showJumpControls={false}
         customVolumeControls={[]}

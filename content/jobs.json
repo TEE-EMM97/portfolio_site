@@ -1,9 +1,21 @@
 {
 "jobs":[
   {
+    "company": "C-21",
+    "url": "http://c-21.co.uk/",
+    "time": "September 2021 - Current",
+    "position": "Software Engineer"
+  },
+  {
+    "company": "HRL Hair",
+    "url": "https://hrlhair.com/",
+    "time": "June 2021 - August 2021",
+    "position": "Freelance Full Stack Developer"
+  },
+  {
     "company": "Kleyo LTD",
     "url": "https://shop.kleyo.co/?gclid=Cj0KCQjw--GFBhDeARIsACH_kdax1zXhXBp_fnPOJ937eGBMM4LOaCd80H5IkbAw1UwUZRtgvHvBucwaAh8cEALw_wcB",
-    "time": "March 2021 - Current",
+    "time": "March 2021 - August 2021",
     "position": "Freelance Full Stack Developer"
   },
   {

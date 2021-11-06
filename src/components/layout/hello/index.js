@@ -27,7 +27,7 @@ const Hello = ({ siteDescription }) => {
     <section className="intro">
       <Fade>
         <h1 className="intro__hello">
-          Hello
+          Hey
           <motion.div
             whileHover={variants}
             animate={variants}

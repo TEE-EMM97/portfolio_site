@@ -11,6 +11,9 @@
     },
     {
       "item": "SQL"
+    },
+    {
+      "item": "PHP"
     }
   ],
   "frameworks": [
@@ -26,7 +29,9 @@
     {
       "item": "GatsbyJS"
     },
-    { "item": "NodeJS"},
+    { 
+      "item": "NodeJS"
+    },
     {
       "item": "React-Native"
     }
@@ -60,6 +65,12 @@
     },
     {
       "item": "Invision"
+    },
+    {
+      "item": "Adobe XD"
+    },
+    {
+      "item": "Adobe Photoshop"
     },
     {
       "item": "Wireframing"
