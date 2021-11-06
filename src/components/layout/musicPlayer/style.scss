@@ -21,33 +21,109 @@
   flex: 0!important;
 }
 
-.song-title-wrapper {
-  height: 50px;
-  overflow: hidden;
-  position: relative;
-  color: #D2376A;
+.player-wrapper {
+  align-items: center; 
+  display: flex;
+  width: 700px;
 
-  .song-title {
-    position: absolute;
+  .forwardBackward {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-family: monospace;
+    font-style: 16px;
+    cursor: pointer;
+
+    :hover {
+     color: #D2376A;
+    }
+  }
+
+  .playPause {
+    background: #034;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > .play {
+      position: relative;
+      left: 5px;
+    }
+  }
+
+  .currentTime,.duration {
+    font-family: monospace;
+    font-size: 16px;
+  }
+
+  .currentTime {
+    margin-left: 25px;
+  }
+
+  .progressBar{
+    appearance: none;
+    background: #ffe3d4;
+    border-radius: 10px;
+    position: relative;
     width: 100%;
-    height: 100%;
-    margin: 0;
-    line-height: 50px;
-    text-align: center;
-    /* Starting position */
-    transform: translateX(50%);
-    /* Apply animation to this element */
-    animation: song-title-wrapper 4s linear infinite alternate;
+    height: 11px;
+    outline: none;
+
+    ::before {
+      content: '';
+      height: 11px;
+      width: 0;
+      background-color: #ffc2a1;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      position: absolute;
+      top:0;
+      left:0;
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    :active {
+      transform: scale(1.2);
+      background: #26c9c3;
+    }
   }
 }
 
-/* Move it (define the animation) */
-@keyframes song-title-wrapper {
-  0% {
-    transform: translateX(30%);
-  }
+// .song-title-wrapper {
+//   height: 50px;
+//   overflow: hidden;
+//   position: relative;
+//   color: #D2376A;
 
-  100% {
-    transform: translateX(-30%);
-  }
-}
+//   .song-title {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     margin: 0;
+//     line-height: 50px;
+//     text-align: center;
+//     /* Starting position */
+//     transform: translateX(50%);
+//     /* Apply animation to this element */
+//     animation: song-title-wrapper 4s linear infinite alternate;
+//   }
+// }
+
+// /* Move it (define the animation) */
+// @keyframes song-title-wrapper {
+//   0% {
+//     transform: translateX(30%);
+//   }
+
+//   100% {
+//     transform: translateX(-30%);
+//   }
+// }

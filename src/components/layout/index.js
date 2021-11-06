@@ -48,7 +48,7 @@ const Layout = ({ children }) => {
         `}
       />
       <section className="site-wrapper">
-        <Particles />
+        {/* <Particles /> */}
         <div className="main-content">
           <Toggle />
           {children}
@@ -56,7 +56,6 @@ const Layout = ({ children }) => {
 
         <Scroll />
         <Footer />
-        <MusicPlayer />
       </section>
     </>
   );

@@ -7,6 +7,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Seo from '../components/seo';
 import Blog from '../components/layout/blog';
 import Projects from '../components/layout/projectSect';
+import MusicPlayer from '../components/layout/musicPlayer';
 
 const Home = () => {
   const data = useStaticQuery(graphql`
@@ -24,10 +25,11 @@ const Home = () => {
     <Layout>
       <Seo siteTitle={data.site.siteMetadata.title} title="Home" />
       <Hello siteDescription={data.site.siteMetadata.description} />
-      <Skills />
-      <Experience />
-      <Blog />
-      <Projects/>
+      {/* <Skills /> */}
+      {/* <Experience /> */}
+      {/* <Blog /> */}
+      {/* <Projects /> */}
+      <MusicPlayer/>
     </Layout>
   );
 };
