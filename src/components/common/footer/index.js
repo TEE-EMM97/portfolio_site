@@ -1,6 +1,6 @@
 import React from 'react';
 import socialData from '../../../config';
-import MusicPlayer from '../../layout/musicPlayer';
+// import MusicPlayer from '../../layout/musicPlayer';
 import './footer.scss'
 
 const Footer = () => {

@@ -14,7 +14,7 @@ const Experience = () => {
           <div className="xp__content">
             {JobData.jobs.map((data, index) => {
               return (
-                <div className="jobs">
+                <div key={index} className="jobs">
                   <div className="job">
                     <div className="place-time">
                       <div className="company">
