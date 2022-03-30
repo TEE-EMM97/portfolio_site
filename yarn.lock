@@ -14948,8 +14948,8 @@ __metadata:
     react-dom: ^17.0.1
     react-h5-audio-player: ^3.7.1
     react-helmet: ^6.1.0
-    react-particles-js: ^3.5.3
     react-reveal: ^1.2.2
+    react-tsparticles: ^1.42.4
     sass: ^1.34.1
     styled-components: ^5.3.0
     tsparticles: ^1.33.3
@@ -15937,18 +15937,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-particles-js@npm:^3.5.3":
-  version: 3.5.3
-  resolution: "react-particles-js@npm:3.5.3"
-  dependencies:
-    lodash: ^4.17.11
-  peerDependencies:
-    react: ^16.0.0
-    tsparticles: ^1.30.0
-  checksum: ec975c724669669db4f19640bbb2eff16fa921d2541a4c11af44fa264420f28b239b72545e60a9a2462bae264ef3ef131fbd980fc54b2f9b220b44025722db05
-  languageName: node
-  linkType: hard
-
 "react-refresh@npm:^0.9.0":
   version: 0.9.0
   resolution: "react-refresh@npm:0.9.0"
@@ -15973,6 +15961,18 @@ __metadata:
   peerDependencies:
     react: ^16.3.0 || ^17.0.0
   checksum: 324511ea8f6669555e166b4af280cdf46034bf0e33c486711e3ce17f88f6f21fed17055098408be1347657d0cbcd614bca944cf9f8e4ecfa96a21d13893fe9fc
+  languageName: node
+  linkType: hard
+
+"react-tsparticles@npm:^1.42.4":
+  version: 1.42.4
+  resolution: "react-tsparticles@npm:1.42.4"
+  dependencies:
+    fast-deep-equal: ^3.1.3
+    tsparticles: ^1.42.4
+  peerDependencies:
+    react: ">=16"
+  checksum: d12c161a40edbc0645fc6208477ee436f96dcd656f9078383a05d3f227ebf30718e726f9551fde69001c3377415c7d984600fb4b78578455e6d702bb163aba32
   languageName: node
   linkType: hard
 
@@ -18640,6 +18640,13 @@ __metadata:
     pathseg:
       optional: true
   checksum: b517e285a2d4da097701d32ad67ca08f39a3b8c9b140c745c112b8e27df734eb2e7671aea781bf05f66766734ad118454fa960ca3296a8389da4c5951fdfa3d7
+  languageName: node
+  linkType: hard
+
+"tsparticles@npm:^1.42.4":
+  version: 1.42.4
+  resolution: "tsparticles@npm:1.42.4"
+  checksum: 85cd3938ec3de237dfcda39e324af1e81aef8b88435d7a2a0a3e3fc45e00f83efd35ed29cc2dbf5ef6244e4023a0e1dbb82c1011b141493e7d0cd62d43ed74a5
   languageName: node
   linkType: hard
 

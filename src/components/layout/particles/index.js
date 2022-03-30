@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import Particles from 'react-particles-js';
+import Particles from "react-tsparticles";
 import Context from '../../../store/context'
 import { useTheme } from '@emotion/react'
 
