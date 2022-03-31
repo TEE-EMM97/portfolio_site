@@ -71,6 +71,11 @@
 
   &__content{
     margin-top: toRem(20);
+      img {
+        width: 100% !important;
+        padding-top: toRem(20);
+        padding-bottom: toRem(20);
+      }
   }
 
   > * {
