@@ -6,10 +6,15 @@
 
 const path = require('path');
 
-module.exports.createPages = async ({ graphql, actions }) => {
+// Log out information after a build is done
+exports.onPostBuild = ({ reporter }) => {
+  reporter.info(`Your Gatsby site has been built!`)
+}
+
+exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  const blogPostTemplate = path.resolve('src/templates/blog-posts/index.js');
+  const blogPostTemplate = path.resolve('src/templates/blog-posts/post.js');
   const res = await graphql(
     `
       query {
