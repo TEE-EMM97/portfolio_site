@@ -36,7 +36,7 @@
     "gatsby-source-contentful": "^5.7.0",
     "gatsby-source-filesystem": "^3.10.0",
     "gatsby-source-github-api": "^1.0.0",
-    "gatsby-transformer-remark": "^4.4.1",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^3.10.0",
     "local-storage-fallback": "^4.1.2",
     "prop-types": "^15.7.2",
