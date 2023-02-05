@@ -1,16 +1,16 @@
-import { motion } from 'framer-motion';
-import Fade from 'react-reveal/Fade';
-import Button from '../../common/button';
-import Mail from '../../common/contact';
-import React, { useState, useEffect } from 'react';
+import { motion } from "framer-motion";
+import Fade from "react-reveal/Fade";
+import { Button } from "../../common/button";
+import { Mail } from "../../common/contact";
+import React, { useState, useEffect } from "react";
 
-const Hello = ({ siteDescription }) => {
+export const Hello = ({ siteDescription }) => {
   const variants = {
     rotate: [0, -25, 0, -25, 0],
   };
 
   //Custom hook to check screensize.
-  const isBrowser = typeof window !== 'undefined';
+  const isBrowser = typeof window !== "undefined";
   const [width, setWidth] = useState(isBrowser ? window.innerWidth : 0);
 
   const breakpoint = 700;
@@ -18,9 +18,9 @@ const Hello = ({ siteDescription }) => {
   useEffect(() => {
     if (!isBrowser) return false;
     const handleWindowResize = () => setWidth(window.innerWidth);
-    window.addEventListener('resize', () => setWidth(window.innerWidth));
+    window.addEventListener("resize", () => setWidth(window.innerWidth));
     // Return a function from the effect that removes the event listener
-    return () => window.removeEventListener('resize', handleWindowResize);
+    return () => window.removeEventListener("resize", handleWindowResize);
   }, [isBrowser]);
 
   return (
@@ -31,8 +31,8 @@ const Hello = ({ siteDescription }) => {
           <motion.div
             whileHover={variants}
             animate={variants}
-            transition={{ type: 'tween', stiffness: 100 }}
-            style={{ paddingLeft: 10, lineHeight: '38px' }}
+            transition={{ type: "tween", stiffness: 100 }}
+            style={{ paddingLeft: 10, lineHeight: "38px" }}
           >
             <span role="img" aria-labelledby="waving">
               👋
@@ -44,10 +44,10 @@ const Hello = ({ siteDescription }) => {
         <div className="intro__touch">
           <Mail email subject="Hello & Welcome" body="Hello world!">
             <Button
-              children={`Get in Touch!`}
+              children="Get in Touch!"
               linkTo={`/`}
               buttonStyle={`btn--checkBlog`}
-              buttonSize={width < breakpoint ? 'btn--x--small' : 'btn--medium'}
+              buttonSize={width < breakpoint ? "btn--x--small" : "btn--medium"}
             />
           </Mail>
         </div>
@@ -55,4 +55,3 @@ const Hello = ({ siteDescription }) => {
     </section>
   );
 };
-export default Hello;

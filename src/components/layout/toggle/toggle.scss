@@ -28,12 +28,12 @@
     cursor: pointer;
   }
 
-  @media only screen and (min-width: 730px) and (max-width:1024px) {
-    padding: 10px 0 0 0
+  @media only screen and (min-width: 730px) and (max-width: 1024px) {
+    padding: 10px 0 0 0;
   }
 }
 
-.toggle-container>span {
+.toggle-container > span {
   font-size: 1.2em;
   background: none;
   border: none;
@@ -42,7 +42,7 @@
   margin-right: 2px;
 }
 
-.toggle-container>span:last-child {
+.toggle-container > span:last-child {
   margin-top: 5px;
   padding-right: 1rem;
 }
@@ -61,13 +61,12 @@ input[type="checkbox"].day-night-switch {
   outline: none;
 }
 
-
 input[type="checkbox"].day-night-switch:checked {
-  background: rgb(77, 66, 149)
+  background: rgb(77, 66, 149);
 }
 
-input[type="checkbox"].day-night-switch:checked+label {
-  transform: translate(22px,0px);
+input[type="checkbox"].day-night-switch:checked + label {
+  transform: translate(22px, 0px);
   border-radius: 100%;
   background: slateblue;
   transition: all 0.3s ease;
@@ -77,7 +76,7 @@ input[type="checkbox"].day-night-switch:focus-visible {
   outline: solid 2px white;
 }
 
-input[type="checkbox"].day-night-switch+label {
+input[type="checkbox"].day-night-switch + label {
   display: inline-block;
   width: 18px;
   height: 18px;
@@ -86,6 +85,6 @@ input[type="checkbox"].day-night-switch+label {
   cursor: pointer;
   position: absolute;
   opacity: 0.9;
-  background-color: #FFEB3B;
+  background-color: #ffeb3b;
   margin: 0;
 }

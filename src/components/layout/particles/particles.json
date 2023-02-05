@@ -1,43 +1,43 @@
 {
   "particles": {
     "number": {
-    "value": 60,
-    "density": {
+      "value": 60,
+      "density": {
+        "enable": true,
+        "value_area": 2000
+      }
+    },
+    "line_linked": {
       "enable": true,
-      "value_area": 2000
+      "opacity": 0.06
+    },
+    "move": {
+      "direction": "left",
+      "speed": 0.1
+    },
+    "size": {
+      "value": 2
+    },
+    "opacity": {
+      "anim": {
+        "enable": true,
+        "speed": 1,
+        "opacity_min": 0.05
+      }
     }
   },
-  "line_linked": {
-    "enable": true,
-    "opacity": 0.06
-  },
-  "move": {
-    "direction": "left",
-    "speed": 0.1
-  },
-  "size": {
-    "value": 2
-  },
-  "opacity": {
-    "anim": {
-      "enable": true,
-      "speed": 1,
-      "opacity_min": 0.05
-    }
-  }
-},
-"interactivity": {
-  "events": {
-    "onclick": {
-      "enable": true,
-      "mode": "push"
+  "interactivity": {
+    "events": {
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      }
+    },
+    "modes": {
+      "push": {
+        "particles_nb": 3
+      }
     }
   },
-  "modes": {
-    "push": {
-      "particles_nb": 3
-    }
-  }
-},
-"retina_detect": true
+  "retina_detect": true
 }

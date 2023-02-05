@@ -28,43 +28,42 @@
     padding-bottom: toRem(100);
 
     // tablet
-    @media only screen and (min-width: 730px) and (max-width:1024px) {
+    @media only screen and (min-width: 730px) and (max-width: 1024px) {
       font-size: toRem(30);
       padding-bottom: toRem(20);
     }
 
-    @media only screen and (min-width: 375px) and (max-width:729px) {
+    @media only screen and (min-width: 375px) and (max-width: 729px) {
       font-size: toRem(28);
       line-height: 40px;
       padding-bottom: toRem(30);
     }
 
     //Mobile
-    @media only screen and (min-width: 209px) and (max-width:374px) {
+    @media only screen and (min-width: 209px) and (max-width: 374px) {
       font-size: toRem(20);
       line-height: 40px;
       padding-bottom: toRem(10);
     }
   }
 
-
   .intro__para {
     font-size: toRem(36);
     padding-bottom: toRem(100);
 
     // tablet
-    @media only screen and (min-width: 730px) and (max-width:1024px) {
+    @media only screen and (min-width: 730px) and (max-width: 1024px) {
       font-size: toRem(30);
       padding-bottom: toRem(20);
     }
 
-    @media only screen and (min-width: 375px) and (max-width:729px) {
+    @media only screen and (min-width: 375px) and (max-width: 729px) {
       font-size: toRem(28);
       padding-bottom: toRem(30);
     }
 
     //Mobile
-    @media only screen and (min-width: 209px) and (max-width:374px) {
+    @media only screen and (min-width: 209px) and (max-width: 374px) {
       font-size: toRem(20);
       padding-bottom: toRem(10);
     }

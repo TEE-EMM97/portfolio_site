@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import Button from '../button';
+import React, { useEffect, useState } from "react";
+import { Button } from "../button";
 
-const Scroll = () => {
+export const Scroll = () => {
   const [isVisable, setIsVisable] = useState(false);
   const toggleVis = () => {
     if (window.pageYOffset > 100) {
@@ -14,29 +14,29 @@ const Scroll = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', toggleVis);
+    window.addEventListener("scroll", toggleVis);
     return () => {
-      window.removeEventListener('scroll', toggleVis);
+      window.removeEventListener("scroll", toggleVis);
     };
   }, []);
 
-  const chevIcon =  <i className="bi-chevron-up" role="img" aria-label="chevron-up" />
+  const chevIcon = (
+    <i className="bi-chevron-up" role="img" aria-label="chevron-up"></i>
+  );
   return (
-    <div style={{ position: 'fixed', bottom: 55, right: 20, zIndex: 20 }}>
+    <div style={{ position: "fixed", bottom: 55, right: 20, zIndex: 20 }}>
       <Button
         onClick={scrollToTop}
-        buttonStyle={isVisable ? ('btn--scroll') : ('btn--d-none')}
+        buttonStyle={isVisable ? "btn--scroll" : "btn--d-none"}
         buttonSize={`btn--chev`}
         children={chevIcon}
-        linkTo={''}
-        />
+        linkTo={""}
+      />
     </div>
   );
 };
-
-export default Scroll;

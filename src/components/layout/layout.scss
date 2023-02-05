@@ -5,11 +5,11 @@
   @return $remValue;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import "./hello/hello.scss";
 @import "./skills/skills.scss";
 @import "./experience/experience.scss";
-@import "./blog/blog.scss";
+@import "./HomeBlogSection/HomeBlogSection.scss";
 @import "./projectSect/projects.scss";
 
 html {
@@ -46,10 +46,9 @@ header {
 }
 
 a:hover {
-  color: #D2376A !important;
-  border: #D2376A;
+  color: #d2376a !important;
+  border: #d2376a;
 }
-
 
 .site-wrapper {
   display: flex;
@@ -82,14 +81,13 @@ a:hover {
   width: 100%;
   margin-bottom: toRem(100);
 
-
   //Mobile - Tablet
-  @media only screen and (min-width: 209px) and (max-width:700px) {
+  @media only screen and (min-width: 209px) and (max-width: 700px) {
     width: 90%;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    
+
     h4 {
       font-size: toRem(18);
     }
@@ -120,12 +118,12 @@ a:hover {
       text-align: left;
     }
 
-    >h4 {
+    > h4 {
       font-weight: 500;
 
-    > span {
-      color: #D2376A;
-    }
+      > span {
+        color: #d2376a;
+      }
     }
   }
 
@@ -136,7 +134,6 @@ a:hover {
     font-size: toRem(16);
     padding-top: toRem(5);
 
-
     .link-to {
       text-transform: capitalize !important;
       font-weight: 700;
@@ -146,17 +143,17 @@ a:hover {
       display: inline-block;
 
       i {
-        padding-left: .5rem;
+        padding-left: 0.5rem;
       }
 
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
         bottom: 0;
         width: 100%;
         height: 2px;
-        background: #D2376A !important;
+        background: #d2376a !important;
         transform: scaleX(0);
         transform-origin: right;
         transition: transform 250ms ease-in-out;
@@ -168,10 +165,9 @@ a:hover {
       }
     }
 
-    @media only screen and (min-width: 209px) and (max-width:700px) {
+    @media only screen and (min-width: 209px) and (max-width: 700px) {
       padding-top: toRem(20);
       padding-left: toRem(30);
     }
   }
-
 }

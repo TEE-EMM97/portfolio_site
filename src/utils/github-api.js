@@ -14,4 +14,4 @@ query($github_login: String!) {
 	 }
 	}
 }
-`
+`;

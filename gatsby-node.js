@@ -4,17 +4,17 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-const path = require('path');
+const path = require("path");
 
 // Log out information after a build is done
 exports.onPostBuild = ({ reporter }) => {
-  reporter.info(`Your Gatsby site has been built!`)
-}
+  reporter.info(`Your Gatsby site has been built!`);
+};
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  const blogPostTemplate = path.resolve('src/templates/blog-posts/post.js');
+  const blogPostTemplate = path.resolve("src/templates/blog-posts.js");
   const res = await graphql(
     `
       query {

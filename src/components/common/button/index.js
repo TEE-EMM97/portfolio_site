@@ -1,20 +1,19 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import './button.scss';
+import "./button.scss";
 
-const STYLES = [
-  'btn--checkBlog',
-  'btn--scroll',
-  'btn--d-none'
+const STYLES = ["btn--checkBlog", "btn--scroll", "btn--d-none"];
+
+const SIZES = [
+  "btn--x--small",
+  "btn--chev",
+  "btn--small",
+  "btn--medium",
+  "btn--large",
 ];
 
-const SIZES = ['btn--x--small', 'btn--chev','btn--small', 'btn--medium', 'btn--large'];
-
-
-
-
-const Button = ({
+export const Button = ({
   children,
   type,
   onClick,
@@ -27,22 +26,20 @@ const Button = ({
 
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
-
   return (
     <button
       className={`btn ${checkButtonSize} ${checkButtonStyle}`}
       onClick={onClick}
       type={type}
     >
-      <div className="button__bg">
-        </div>
-          {children}
+      <div className="button__bg"></div>
+      {children}
     </button>
   );
 };
 
 Button.propTypes = {
-  children: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   buttonStyle: PropTypes.string,
   buttonSize: PropTypes.string,
   type: PropTypes.string,
@@ -54,7 +51,5 @@ Button.defaultProps = {
   children: `Button`,
   buttonStyle: `btn--primary--solid`,
   buttonSize: `btn--large`,
-  type: 'button',
+  type: "button",
 };
-
-export default Button;

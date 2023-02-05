@@ -1,23 +1,23 @@
-import { useReducer } from "react"
-import storage from "local-storage-fallback"
+import { useReducer } from "react";
+import storage from "local-storage-fallback";
 
-// State changer for website theme 
+// State changer for website theme
 const reducer = (state, action) => {
   switch (action.type) {
     case "TOGGLE_DARK":
-      storage.setItem("isDark", !state.isDark)
+      storage.setItem("isDark", !state.isDark);
       return {
         isDark: !state.isDark,
-      }
+      };
     case "TOGGLE_NAV":
       return {
         isNavOpen: !state.isNavOpen,
-      }
+      };
     default: {
-      return state
+      return state;
     }
   }
-}
+};
 
 const useGlobalState = () => {
   // Saves theme change to local storage allowing to keep state either light or dark on refresh.
@@ -25,10 +25,10 @@ const useGlobalState = () => {
     isDark: storage.getItem("isDark")
       ? JSON.parse(storage.getItem("isDark"))
       : false,
-    isNavOpen: false 
-  })
+    isNavOpen: false,
+  });
 
-  return { state, dispatch }
-}
+  return { state, dispatch };
+};
 
-export default useGlobalState
+export default useGlobalState;

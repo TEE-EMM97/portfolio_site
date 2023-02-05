@@ -1,27 +1,18 @@
-import React from 'react';
-import { useStaticQuery, graphql, Link } from 'gatsby';
-import Fade from 'react-reveal/Fade';
-import '../layout.scss';
+import React from "react";
+import { useStaticQuery, graphql, Link } from "gatsby";
+import Fade from "react-reveal/Fade";
+import "../layout.scss";
 
-const Blog = () => {
-  const data = useStaticQuery(graphql`
+export const HomeBlogSection = () => {
+  const blogData = useStaticQuery(graphql`
     query {
-      allContentfulBlogPost(
-        sort: { fields: [publishDate], order: DESC }
-        limit: 4
-      ) {
+      allContentfulBlogPost(sort: { publishDate: DESC }, limit: 4) {
         edges {
           node {
             id
             title
             slug
             publishDate(formatString: "MMMM Do, YYYY")
-            coverImages {
-              id
-              fluid(quality: 100) {
-                ...GatsbyContentfulFluid
-              }
-            }
             blogBody {
               childMarkdownRemark {
                 timeToRead
@@ -33,13 +24,17 @@ const Blog = () => {
       }
     }
   `);
+  const {
+    allContentfulBlogPost: { edges: blogPosts },
+  } = blogData;
 
-  const blogPosts = data.allContentfulBlogPost.edges
   return (
     <section className="section blogs">
       <Fade>
         <div className="section__title">
-          <h4>3. <span>blogs</span></h4>
+          <h4>
+            3. <span>blogs</span>
+          </h4>
         </div>
         <div className="section__content">
           <ol className="blogs__posts">
@@ -58,8 +53,8 @@ const Blog = () => {
                     <p>
                       <span role="img" aria-label="emoji-calendar">
                         📆
-                      </span>{' '}
-                      {edge.node.publishDate} • ☕️{' '}
+                      </span>{" "}
+                      {edge.node.publishDate} • ☕️{" "}
                       {edge.node.blogBody.childMarkdownRemark.timeToRead} min
                       read
                     </p>
@@ -76,5 +71,3 @@ const Blog = () => {
     </section>
   );
 };
-
-export default Blog;

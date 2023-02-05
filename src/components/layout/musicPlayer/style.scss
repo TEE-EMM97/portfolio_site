@@ -1,12 +1,12 @@
 .rhap_current-time,
 .rhap_total-time,
 .rhap_play-pause-button {
-  color: #D2376A;
+  color: #d2376a;
 }
 
 .rhap_progress-indicator,
 .rhap_progress-filled {
-  background-color: #D2376A;
+  background-color: #d2376a;
 }
 
 .rhap_progress-bar-show-download {
@@ -18,14 +18,14 @@
 }
 
 .rhap_controls-section {
-  flex: 0!important;
+  flex: 0 !important;
 }
 
 .song-title-wrapper {
   height: 50px;
   overflow: hidden;
   position: relative;
-  color: #D2376A;
+  color: #d2376a;
 
   .song-title {
     position: absolute;

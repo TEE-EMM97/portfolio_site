@@ -1,57 +1,53 @@
-  // Experience 
+// Experience
 
-  .xp {
-    .xp__content {
-      letter-spacing: 1px;
+.xp {
+  .xp__content {
+    letter-spacing: 1px;
 
-      a {
-        color: inherit;
-        font-weight: 700;
-        text-decoration: none;
-        position: relative;
+    a {
+      color: inherit;
+      font-weight: 700;
+      text-decoration: none;
+      position: relative;
 
-        &::after {
-          content: '';
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          width: 100%;
-          height: 2px;
-          transform: scaleX(0);
-          transform-origin: right;
-          transition: transform 250ms ease-in-out;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 250ms ease-in-out;
+      }
 
-        }
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+        background: #d2376a !important;
+      }
+    }
 
-        &:hover::after {
-          transform: scaleX(1);
-          transform-origin: left;
-      background: #D2376A !important;
+    .job {
+      margin-bottom: 30px;
 
+      > .place-time {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @media only screen and (max-width: 500px) {
+          flex-direction: column;
+          justify-content: space-evenly;
         }
       }
 
-      .job {
-        margin-bottom: 30px;
-
-        > .place-time {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-
-          @media only screen and (max-width:500px) {
-            flex-direction: column;
-          justify-content: space-evenly;
-
-          }
-
-        }
-
-         .position {
-          font-style: italic;
-          justify-content: end;
-          color: #D2376A;
-        }
+      .position {
+        font-style: italic;
+        justify-content: end;
+        color: #d2376a;
       }
     }
   }
+}

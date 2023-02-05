@@ -1,15 +1,15 @@
-import React, { useContext } from 'react';
-import PropTypes from 'prop-types';
-import { Global, css } from '@emotion/react';
-import Context from '../../store/context';
-import { useTheme } from '@emotion/react';
-import Footer from '../common/footer';
-import Particles from './particles';
-import Scroll from '../common/scroll';
-import Toggle from '../layout/toggle';
-import MusicPlayer from './musicPlayer';
-import './layout.scss';
-const Layout = ({ children }) => {
+import React, { useContext } from "react";
+import PropTypes from "prop-types";
+import { Global, css } from "@emotion/react";
+import { Context } from "../../store/context";
+import { useTheme } from "@emotion/react";
+import { Footer } from "../common/footer";
+// import Particles from './particles';
+import { Scroll } from "../common/scroll";
+import { Toggle } from "../layout/toggle";
+import { MusicPlayer } from "./musicPlayer";
+import "./layout.scss";
+export const Layout = ({ children }) => {
   const { state } = useContext(Context);
   const theme = useTheme();
 
@@ -35,9 +35,8 @@ const Layout = ({ children }) => {
           .rhap_container {
             background-color: ${state.isDark
               ? theme.dark.background
-          : theme.light.background} !important;
-            box-shadow: 0px 0px 0px 0px
-              
+              : theme.light.background} !important;
+            box-shadow: 0px 0px 0px 0px;
           }
 
           #tsparticles {
@@ -48,7 +47,7 @@ const Layout = ({ children }) => {
         `}
       />
       <section className="site-wrapper">
-        <Particles />
+        {/* <Particles /> */}
         <div className="main-content">
           <Toggle />
           {children}
@@ -65,5 +64,3 @@ const Layout = ({ children }) => {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 };
-
-export default Layout;

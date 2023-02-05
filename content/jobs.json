@@ -1,46 +1,46 @@
 {
-"jobs":[
-  {
-    "company": "C-21",
-    "url": "http://c-21.co.uk/",
-    "time": "September 2021 - Current",
-    "position": "Software Engineer"
-  },
-  {
-    "company": "HRL Hair",
-    "url": "https://hrlhair.com/",
-    "time": "June 2021 - August 2021",
-    "position": "Freelance Full Stack Developer"
-  },
-  {
-    "company": "Kleyo LTD",
-    "url": "https://shop.kleyo.co/?gclid=Cj0KCQjw--GFBhDeARIsACH_kdax1zXhXBp_fnPOJ937eGBMM4LOaCd80H5IkbAw1UwUZRtgvHvBucwaAh8cEALw_wcB",
-    "time": "March 2021 - August 2021",
-    "position": "Freelance Full Stack Developer"
-  },
-  {
-    "company": "Love Circular",
-    "url": "https://www.lovecircular.com/",
-    "time": "August 2020 - October 2020",
-    "position": "Freelance Front-end Developer"
-  },
-  {
-    "company": "MMU",
-    "url": "https://www.mmu.ac.uk",
-    "time": "July 2019 - August 2020",
-    "position": "Software Engineer"
-  },
-  {
-    "company": "Browability",
-    "url": "https://www.browability.com/",
-    "time": "April 2018 - June 2018",
-    "position": "Freelance Front-end Developer"
-  },
-  {
-    "company": "Shuffzco",
-    "url": "https://shuffz.co",
-    "time": "January 2014 - February 2017",
-    "position": "Front-end Developer"
-  }
- ]
+  "jobs": [
+    {
+      "company": "C-21",
+      "url": "http://c-21.co.uk/",
+      "time": "September 2021 - Current",
+      "position": "Software Engineer"
+    },
+    {
+      "company": "HRL Hair",
+      "url": "https://hrlhair.com/",
+      "time": "June 2021 - August 2021",
+      "position": "Freelance Full Stack Developer"
+    },
+    {
+      "company": "Kleyo LTD",
+      "url": "https://shop.kleyo.co/?gclid=Cj0KCQjw--GFBhDeARIsACH_kdax1zXhXBp_fnPOJ937eGBMM4LOaCd80H5IkbAw1UwUZRtgvHvBucwaAh8cEALw_wcB",
+      "time": "March 2021 - August 2021",
+      "position": "Freelance Full Stack Developer"
+    },
+    {
+      "company": "Love Circular",
+      "url": "https://www.lovecircular.com/",
+      "time": "August 2020 - October 2020",
+      "position": "Freelance Front-end Developer"
+    },
+    {
+      "company": "MMU",
+      "url": "https://www.mmu.ac.uk",
+      "time": "July 2019 - August 2020",
+      "position": "Software Engineer"
+    },
+    {
+      "company": "Browability",
+      "url": "https://www.browability.com/",
+      "time": "April 2018 - June 2018",
+      "position": "Freelance Front-end Developer"
+    },
+    {
+      "company": "Shuffzco",
+      "url": "https://shuffz.co",
+      "time": "January 2014 - February 2017",
+      "position": "Front-end Developer"
+    }
+  ]
 }

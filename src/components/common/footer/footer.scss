@@ -13,20 +13,19 @@ footer {
   //Stop floating on blog page
   margin-bottom: 0 !important;
 
-  > .footer__socials{
+  > .footer__socials {
     display: flex;
     flex-direction: row;
     justify-content: end;
-    align-items:flex-end;
+    align-items: flex-end;
     margin-left: auto;
     //Icon Styling
     i {
       font-size: toRem(16);
-      opacity: .4;
+      opacity: 0.4;
       &:hover {
         opacity: 1;
       }
     }
   }
 }
-

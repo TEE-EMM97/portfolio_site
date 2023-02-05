@@ -2,10 +2,6 @@
   Gatsby Starter Portfolio: DawnTilDusk
 </h1>
 
-
-
-
-
 ## Overview
 
 [GatsbyJS](https://www.gatsbyjs.com/) is a free and open source static website builder build on React. It's one implementation of the [JAMstack](https://jamstack.org/) idea which creates high speed webpages.
@@ -16,14 +12,14 @@ This is a clean, minimal, and responsive starter for creating portfolios or blog
 
 - [Gatsby CLI](https://www.gatsbyjs.com/docs/tutorial/part-zero/#using-the-gatsby-cli)
 
-##  Portfolio Features
+## Portfolio Features
 
 - [x] IE 11 Compliant
 - [x] Firefox Compliant
 - [x] Chrome Compliant
 - [x] Responsive
 - [x] SCSS
-- [x] Contentful CMS 
+- [x] Contentful CMS
 - [x] Contentful Delivery System(So blogs deliver straight from Contentful)
 - [x] React JavaScript Library
 - [x] Gatsby JS Framework
@@ -45,7 +41,7 @@ This is a clean, minimal, and responsive starter for creating portfolios or blog
   - Skills
   - Experience
   - Blogs Post Section
-    - Blog Post Page 
+    - Blog Post Page
   - Github Projects Section
   - Footer
 
@@ -54,14 +50,6 @@ This is a clean, minimal, and responsive starter for creating portfolios or blog
 https://tm97.gatsbyjs.io
 
 ![portfoliogiphy](https://raw.githubusercontent.com/TEE-EMM97/portfolio_site-WIP-/master/src/images/portfoliogiphy.webp)
-
-
-
-
-
-
-
-
 
 ## Getting Started
 
@@ -75,8 +63,6 @@ yarn install
 ```
 gatsby new your-project-name-here https://github.com/TEE-EMM97/portfolio_site-WIP-.git
 ```
-
-
 
 ### Setup Contentful
 
@@ -132,15 +118,11 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 12. **`README.md`**: A text file containing useful reference information about your project.
 
-
-
 ### 🚀 Quick start (Gatsby Cloud)
 
 Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
 
 [<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/TEE-EMM97/portfolio_site-WIP-)
-
-
 
 ### 🌟 Supporting me
 

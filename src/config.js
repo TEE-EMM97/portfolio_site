@@ -27,5 +27,5 @@ module.exports = {
       name: "twitter",
       url: "https://twitter.com/est__tm97",
     },
-  ]
-}
+  ],
+};
