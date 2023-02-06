@@ -60,12 +60,6 @@ module.exports = {
         },
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-styled-components`,
-    //   options: {
-    //     // Add any options here
-    //   }
-    // },
     `gatsby-plugin-sass`,
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-react-helmet`,

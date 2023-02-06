@@ -128,7 +128,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/helper-annotate-as-pure@npm:^7.15.4, @babel/helper-annotate-as-pure@npm:^7.16.0, @babel/helper-annotate-as-pure@npm:^7.18.6":
+"@babel/helper-annotate-as-pure@npm:^7.0.0, @babel/helper-annotate-as-pure@npm:^7.18.6":
   version: 7.18.6
   resolution: "@babel/helper-annotate-as-pure@npm:7.18.6"
   dependencies:
@@ -252,7 +252,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/helper-module-imports@npm:^7.0.0, @babel/helper-module-imports@npm:^7.0.0-beta.49, @babel/helper-module-imports@npm:^7.15.4, @babel/helper-module-imports@npm:^7.16.0, @babel/helper-module-imports@npm:^7.16.7, @babel/helper-module-imports@npm:^7.18.6":
+"@babel/helper-module-imports@npm:^7.0.0, @babel/helper-module-imports@npm:^7.0.0-beta.49, @babel/helper-module-imports@npm:^7.16.7, @babel/helper-module-imports@npm:^7.18.6":
   version: 7.18.6
   resolution: "@babel/helper-module-imports@npm:7.18.6"
   dependencies:
@@ -1421,7 +1421,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.16.5, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.20.7, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
+"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.13.10, @babel/runtime@npm:^7.16.5, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.20.7, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
   version: 7.20.13
   resolution: "@babel/runtime@npm:7.20.13"
   dependencies:
@@ -1441,7 +1441,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/traverse@npm:^7.14.0, @babel/traverse@npm:^7.16.8, @babel/traverse@npm:^7.20.10, @babel/traverse@npm:^7.20.12, @babel/traverse@npm:^7.20.13, @babel/traverse@npm:^7.20.5, @babel/traverse@npm:^7.20.7, @babel/traverse@npm:^7.4.5":
+"@babel/traverse@npm:^7.14.0, @babel/traverse@npm:^7.16.8, @babel/traverse@npm:^7.20.10, @babel/traverse@npm:^7.20.12, @babel/traverse@npm:^7.20.13, @babel/traverse@npm:^7.20.5, @babel/traverse@npm:^7.20.7":
   version: 7.20.13
   resolution: "@babel/traverse@npm:7.20.13"
   dependencies:
@@ -1516,7 +1516,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/babel-plugin@npm:^11.10.0, @emotion/babel-plugin@npm:^11.10.5":
+"@emotion/babel-plugin@npm:^11.10.0, @emotion/babel-plugin@npm:^11.3.0":
   version: 11.10.5
   resolution: "@emotion/babel-plugin@npm:11.10.5"
   dependencies:
@@ -1552,7 +1552,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/cache@npm:^11.10.5":
+"@emotion/cache@npm:^11.4.0":
   version: 11.10.5
   resolution: "@emotion/cache@npm:11.10.5"
   dependencies:
@@ -1581,7 +1581,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/is-prop-valid@npm:^1.1.0, @emotion/is-prop-valid@npm:^1.2.0":
+"@emotion/is-prop-valid@npm:^1.1.0":
   version: 1.2.0
   resolution: "@emotion/is-prop-valid@npm:1.2.0"
   dependencies:
@@ -1604,17 +1604,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/react@npm:^11.4.0":
-  version: 11.10.5
-  resolution: "@emotion/react@npm:11.10.5"
+"@emotion/react@npm:11.4.0":
+  version: 11.4.0
+  resolution: "@emotion/react@npm:11.4.0"
   dependencies:
-    "@babel/runtime": ^7.18.3
-    "@emotion/babel-plugin": ^11.10.5
-    "@emotion/cache": ^11.10.5
-    "@emotion/serialize": ^1.1.1
-    "@emotion/use-insertion-effect-with-fallbacks": ^1.0.0
-    "@emotion/utils": ^1.2.0
-    "@emotion/weak-memoize": ^0.3.0
+    "@babel/runtime": ^7.13.10
+    "@emotion/cache": ^11.4.0
+    "@emotion/serialize": ^1.0.2
+    "@emotion/sheet": ^1.0.1
+    "@emotion/utils": ^1.0.0
+    "@emotion/weak-memoize": ^0.2.5
     hoist-non-react-statics: ^3.3.1
   peerDependencies:
     "@babel/core": ^7.0.0
@@ -1624,11 +1623,11 @@ __metadata:
       optional: true
     "@types/react":
       optional: true
-  checksum: 32b67b28e9b6d6c53b970072680697f04c2521441050bdeb19a1a7f0164af549b4dad39ff375eda1b6a3cf1cc86ba2c6fa55460ec040e6ebbca3e9ec58353cf7
+  checksum: af2abadbaeb762dd09be6f34036a769373fb8625116420c546592a33643e967942769ee23289d160977ae74922ff5dfac5bc5fdbe9c893fc3415fbb4d25c2318
   languageName: node
   linkType: hard
 
-"@emotion/serialize@npm:^1.1.1":
+"@emotion/serialize@npm:^1.0.2, @emotion/serialize@npm:^1.1.1":
   version: 1.1.1
   resolution: "@emotion/serialize@npm:1.1.1"
   dependencies:
@@ -1641,23 +1640,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/sheet@npm:^1.2.1":
+"@emotion/sheet@npm:^1.0.1, @emotion/sheet@npm:^1.2.1":
   version: 1.2.1
   resolution: "@emotion/sheet@npm:1.2.1"
   checksum: ce78763588ea522438156344d9f592203e2da582d8d67b32e1b0b98eaba26994c6c270f8c7ad46442fc9c0a9f048685d819cd73ca87e544520fd06f0e24a1562
   languageName: node
   linkType: hard
 
-"@emotion/styled@npm:^11.3.0":
-  version: 11.10.5
-  resolution: "@emotion/styled@npm:11.10.5"
+"@emotion/styled@npm:11.3.0":
+  version: 11.3.0
+  resolution: "@emotion/styled@npm:11.3.0"
   dependencies:
-    "@babel/runtime": ^7.18.3
-    "@emotion/babel-plugin": ^11.10.5
-    "@emotion/is-prop-valid": ^1.2.0
-    "@emotion/serialize": ^1.1.1
-    "@emotion/use-insertion-effect-with-fallbacks": ^1.0.0
-    "@emotion/utils": ^1.2.0
+    "@babel/runtime": ^7.13.10
+    "@emotion/babel-plugin": ^11.3.0
+    "@emotion/is-prop-valid": ^1.1.0
+    "@emotion/serialize": ^1.0.2
+    "@emotion/utils": ^1.0.0
   peerDependencies:
     "@babel/core": ^7.0.0
     "@emotion/react": ^11.0.0-rc.0
@@ -1667,21 +1665,7 @@ __metadata:
       optional: true
     "@types/react":
       optional: true
-  checksum: 1cec5f6aeb227a7255141031e8594f38ad83902413472aae0a46c27e5f9769c01e23c1ad39adee408d8a2168a697464314d1a0c4f50b31a5d25ea506b2d7bbc8
-  languageName: node
-  linkType: hard
-
-"@emotion/stylis@npm:^0.8.4":
-  version: 0.8.5
-  resolution: "@emotion/stylis@npm:0.8.5"
-  checksum: 67ff5958449b2374b329fb96e83cb9025775ffe1e79153b499537c6c8b2eb64b77f32d7b5d004d646973662356ceb646afd9269001b97c54439fceea3203ce65
-  languageName: node
-  linkType: hard
-
-"@emotion/unitless@npm:^0.7.4":
-  version: 0.7.5
-  resolution: "@emotion/unitless@npm:0.7.5"
-  checksum: f976e5345b53fae9414a7b2e7a949aa6b52f8bdbcc84458b1ddc0729e77ba1d1dfdff9960e0da60183877873d3a631fa24d9695dd714ed94bcd3ba5196586a6b
+  checksum: 5e5c1e89d2022696e44d2a44e352aba56ab0961d9c4a78eff5d1bfa3deae08487fb17641610446595471d74e956b791e619d3a9006c18e145ed849ef7062e1b5
   languageName: node
   linkType: hard
 
@@ -1692,19 +1676,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/use-insertion-effect-with-fallbacks@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@emotion/use-insertion-effect-with-fallbacks@npm:1.0.0"
-  peerDependencies:
-    react: ">=16.8.0"
-  checksum: 4f06a3b48258c832aa8022a262572061a31ff078d377e9164cccc99951309d70f4466e774fe704461b2f8715007a82ed625a54a5c7a127c89017d3ce3187d4f1
-  languageName: node
-  linkType: hard
-
-"@emotion/utils@npm:^1.2.0":
+"@emotion/utils@npm:^1.0.0, @emotion/utils@npm:^1.2.0":
   version: 1.2.0
   resolution: "@emotion/utils@npm:1.2.0"
   checksum: 55457a49ddd4db6a014ea0454dc09eaa23eedfb837095c8ff90470cb26a303f7ceb5fcc1e2190ef64683e64cfd33d3ba3ca3109cd87d12bc9e379e4195c9a4dd
+  languageName: node
+  linkType: hard
+
+"@emotion/weak-memoize@npm:^0.2.5":
+  version: 0.2.5
+  resolution: "@emotion/weak-memoize@npm:0.2.5"
+  checksum: 27d402b0c683b94658220b6d47840346ee582329ca2a15ec9c233492e0f1a27687ccb233b76eedc922f2e185e444cc89f7b97a81a1d3e5ae9f075bab08e965ea
   languageName: node
   linkType: hard
 
@@ -4240,32 +4222,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-styled-components@npm:>= 1.12.0":
-  version: 2.0.7
-  resolution: "babel-plugin-styled-components@npm:2.0.7"
+"babel-plugin-styled-components@npm:1.12.0":
+  version: 1.12.0
+  resolution: "babel-plugin-styled-components@npm:1.12.0"
   dependencies:
-    "@babel/helper-annotate-as-pure": ^7.16.0
-    "@babel/helper-module-imports": ^7.16.0
-    babel-plugin-syntax-jsx: ^6.18.0
-    lodash: ^4.17.11
-    picomatch: ^2.3.0
-  peerDependencies:
-    styled-components: ">= 2"
-  checksum: 80b06b10db02d749432a0ac43a5feedd686f6b648628d7433a39b1844260b2b7c72431f6e705c82636ee025fcfd4f6c32fc05677e44033b8a39ddcd4488b3147
-  languageName: node
-  linkType: hard
-
-"babel-plugin-styled-components@npm:^1.12.0":
-  version: 1.13.3
-  resolution: "babel-plugin-styled-components@npm:1.13.3"
-  dependencies:
-    "@babel/helper-annotate-as-pure": ^7.15.4
-    "@babel/helper-module-imports": ^7.15.4
+    "@babel/helper-annotate-as-pure": ^7.0.0
+    "@babel/helper-module-imports": ^7.0.0
     babel-plugin-syntax-jsx: ^6.18.0
     lodash: ^4.17.11
   peerDependencies:
     styled-components: ">= 2"
-  checksum: 265520afd1c1e6633cd796446725b57f3d9eac6abb1d506c0399c34792f6f8a954865c2908cb24703fdf6c06aab8136e2a5098c53a0c7fb744bbdceaf3d5081b
+  checksum: c240e64fc8a5656d154f23a38a4f393aa2845ef0669605e2ceafe3e26bd166de48cb5bebb9e3c9830aa391f84c3435a67164f2854a0ab8326f9148eeaff34bd6
   languageName: node
   linkType: hard
 
@@ -4458,10 +4425,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bootstrap-icons@npm:^1.5.0":
-  version: 1.10.3
-  resolution: "bootstrap-icons@npm:1.10.3"
-  checksum: bef7f83ce09f0ae0b2a92d61b69f3c6d04ba2307e9051ab3f175613837e0dc5252d22e2b3a0403b59995be4e06ebe00f17d0335be6f2cffdbfdbefa9268b6abd
+"bootstrap-icons@npm:1.5.0":
+  version: 1.5.0
+  resolution: "bootstrap-icons@npm:1.5.0"
+  checksum: d36851ad6bf315d20589a7a7f4b513f867a4c55d85ac6881644c0261be56185307cde3f1968f326922a7a925c65897543ca9889ab3054e3a0e4a98005fcb7f4a
   languageName: node
   linkType: hard
 
@@ -4716,13 +4683,6 @@ __metadata:
   version: 6.3.0
   resolution: "camelcase@npm:6.3.0"
   checksum: 8c96818a9076434998511251dcb2761a94817ea17dbdc37f47ac080bd088fc62c7369429a19e2178b993497132c8cbcf5cc1f44ba963e76782ba469c0474938d
-  languageName: node
-  linkType: hard
-
-"camelize@npm:^1.0.0":
-  version: 1.0.1
-  resolution: "camelize@npm:1.0.1"
-  checksum: 91d8611d09af725e422a23993890d22b2b72b4cabf7239651856950c76b4bf53fe0d0da7c5e4db05180e898e4e647220e78c9fbc976113bd96d603d1fcbfcb99
   languageName: node
   linkType: hard
 
@@ -5479,13 +5439,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-color-keywords@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "css-color-keywords@npm:1.0.0"
-  checksum: 8f125e3ad477bd03c77b533044bd9e8a6f7c0da52d49bbc0bbe38327b3829d6ba04d368ca49dd9ff3b667d2fc8f1698d891c198bbf8feade1a5501bf5a296408
-  languageName: node
-  linkType: hard
-
 "css-declaration-sorter@npm:^6.3.1":
   version: 6.3.1
   resolution: "css-declaration-sorter@npm:6.3.1"
@@ -5554,17 +5507,6 @@ __metadata:
   version: 1.4.1
   resolution: "css-selector-parser@npm:1.4.1"
   checksum: 31948754e579eedb918c2fb2d5a4c643ec769ff4a0d03a7bd10b43b25d44973f8cbe86d7ec00c4494269f7ff38b3d2ab0f6ea801cece0ef0974e74469dff770c
-  languageName: node
-  linkType: hard
-
-"css-to-react-native@npm:^3.0.0":
-  version: 3.1.0
-  resolution: "css-to-react-native@npm:3.1.0"
-  dependencies:
-    camelize: ^1.0.0
-    css-color-keywords: ^1.0.0
-    postcss-value-parser: ^4.0.2
-  checksum: 06a44d500736fd063a59c1d8d6e4a46d4a71d7c27c35662c46a5163cfb18893f54fc98a2cd61c31126731658cd2da93425b5e77a6f3897b80357d29c4f19362e
   languageName: node
   linkType: hard
 
@@ -6133,7 +6075,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv@npm:^16.0.3":
+"dotenv@npm:16.0.3":
   version: 16.0.3
   resolution: "dotenv@npm:16.0.3"
   checksum: afcf03f373d7a6d62c7e9afea6328e62851d627a4e73f2e12d0a8deae1cd375892004f3021883f8aec85932cd2834b091f568ced92b4774625b321db83b827f8
@@ -7369,7 +7311,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:^4.1.17":
+"framer-motion@npm:4.1.17":
   version: 4.1.17
   resolution: "framer-motion@npm:4.1.17"
   dependencies:
@@ -7517,7 +7459,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-background-image@npm:^1.6.0":
+"gatsby-background-image@npm:1.6.0":
   version: 1.6.0
   resolution: "gatsby-background-image@npm:1.6.0"
   dependencies:
@@ -7534,7 +7476,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-cli@npm:^5.5.0":
+"gatsby-cli@npm:5.5.0, gatsby-cli@npm:^5.5.0":
   version: 5.5.0
   resolution: "gatsby-cli@npm:5.5.0"
   dependencies:
@@ -7679,7 +7621,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-emotion@npm:^8.5.0":
+"gatsby-plugin-emotion@npm:8.5.0":
   version: 8.5.0
   resolution: "gatsby-plugin-emotion@npm:8.5.0"
   dependencies:
@@ -7693,7 +7635,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-gatsby-cloud@npm:^5.5.0":
+"gatsby-plugin-gatsby-cloud@npm:5.5.0":
   version: 5.5.0
   resolution: "gatsby-plugin-gatsby-cloud@npm:5.5.0"
   dependencies:
@@ -7711,7 +7653,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-image@npm:^3.5.0":
+"gatsby-plugin-image@npm:3.5.0":
   version: 3.5.0
   resolution: "gatsby-plugin-image@npm:3.5.0"
   dependencies:
@@ -7745,7 +7687,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-manifest@npm:^5.5.0":
+"gatsby-plugin-manifest@npm:5.5.0":
   version: 5.5.0
   resolution: "gatsby-plugin-manifest@npm:5.5.0"
   dependencies:
@@ -7782,7 +7724,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-react-helmet@npm:^6.5.0":
+"gatsby-plugin-react-helmet@npm:6.5.0":
   version: 6.5.0
   resolution: "gatsby-plugin-react-helmet@npm:6.5.0"
   dependencies:
@@ -7794,7 +7736,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-sass@npm:^6.5.0":
+"gatsby-plugin-sass@npm:6.5.0":
   version: 6.5.0
   resolution: "gatsby-plugin-sass@npm:6.5.0"
   dependencies:
@@ -7808,7 +7750,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-sharp@npm:^5.5.0":
+"gatsby-plugin-sharp@npm:5.5.0":
   version: 5.5.0
   resolution: "gatsby-plugin-sharp@npm:5.5.0"
   dependencies:
@@ -7830,7 +7772,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-styled-components@npm:^6.5.0":
+"gatsby-plugin-styled-components@npm:6.5.0":
   version: 6.5.0
   resolution: "gatsby-plugin-styled-components@npm:6.5.0"
   dependencies:
@@ -7917,7 +7859,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-source-contentful@npm:^8.5.0":
+"gatsby-source-contentful@npm:8.5.0":
   version: 8.5.0
   resolution: "gatsby-source-contentful@npm:8.5.0"
   dependencies:
@@ -7948,7 +7890,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-source-filesystem@npm:^5.5.0":
+"gatsby-source-filesystem@npm:5.5.0, gatsby-source-filesystem@npm:^5.5.0":
   version: 5.5.0
   resolution: "gatsby-source-filesystem@npm:5.5.0"
   dependencies:
@@ -7967,7 +7909,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-source-github-api@npm:^1.0.0":
+"gatsby-source-github-api@npm:1.0.0":
   version: 1.0.0
   resolution: "gatsby-source-github-api@npm:1.0.0"
   dependencies:
@@ -7997,7 +7939,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-transformer-remark@npm:^6.5.0":
+"gatsby-transformer-remark@npm:6.5.0":
   version: 6.5.0
   resolution: "gatsby-transformer-remark@npm:6.5.0"
   dependencies:
@@ -8029,7 +7971,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-transformer-sharp@npm:^5.5.0":
+"gatsby-transformer-sharp@npm:5.5.0":
   version: 5.5.0
   resolution: "gatsby-transformer-sharp@npm:5.5.0"
   dependencies:
@@ -8060,7 +8002,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby@npm:^5.5.0":
+"gatsby@npm:5.5.0":
   version: 5.5.0
   resolution: "gatsby@npm:5.5.0"
   dependencies:
@@ -8834,7 +8776,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hoist-non-react-statics@npm:^3.0.0, hoist-non-react-statics@npm:^3.3.1":
+"hoist-non-react-statics@npm:^3.3.1":
   version: 3.3.2
   resolution: "hoist-non-react-statics@npm:3.3.2"
   dependencies:
@@ -10119,7 +10061,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"local-storage-fallback@npm:^4.1.2":
+"local-storage-fallback@npm:4.1.2":
   version: 4.1.2
   resolution: "local-storage-fallback@npm:4.1.2"
   dependencies:
@@ -11963,7 +11905,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"patch-package@npm:^6.5.1":
+"patch-package@npm:6.5.1":
   version: 6.5.1
   resolution: "patch-package@npm:6.5.1"
   dependencies:
@@ -12090,7 +12032,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"picomatch@npm:^2.0.4, picomatch@npm:^2.2.1, picomatch@npm:^2.3.0, picomatch@npm:^2.3.1":
+"picomatch@npm:^2.0.4, picomatch@npm:^2.2.1, picomatch@npm:^2.3.1":
   version: 2.3.1
   resolution: "picomatch@npm:2.3.1"
   checksum: 050c865ce81119c4822c45d3c84f1ced46f93a0126febae20737bd05ca20589c564d6e9226977df859ed5e03dc73f02584a2b0faad36e896936238238b0446cf
@@ -12138,40 +12080,41 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "portfolio@workspace:."
   dependencies:
-    "@emotion/react": ^11.4.0
-    "@emotion/styled": ^11.3.0
-    babel-plugin-styled-components: ^1.12.0
+    "@emotion/react": 11.4.0
+    "@emotion/styled": 11.3.0
+    babel-plugin-styled-components: 1.12.0
     bootstrap: 4.5.0
-    bootstrap-icons: ^1.5.0
-    dotenv: ^16.0.3
-    framer-motion: ^4.1.17
-    gatsby: ^5.5.0
-    gatsby-background-image: ^1.6.0
-    gatsby-cli: ^5.5.0
-    gatsby-plugin-emotion: ^8.5.0
-    gatsby-plugin-gatsby-cloud: ^5.5.0
-    gatsby-plugin-image: ^3.5.0
-    gatsby-plugin-manifest: ^5.5.0
-    gatsby-plugin-react-helmet: ^6.5.0
-    gatsby-plugin-sass: ^6.5.0
-    gatsby-plugin-sharp: ^5.5.0
-    gatsby-plugin-styled-components: ^6.5.0
-    gatsby-source-contentful: ^8.5.0
-    gatsby-source-filesystem: ^5.5.0
-    gatsby-source-github-api: ^1.0.0
-    gatsby-transformer-remark: ^6.5.0
-    gatsby-transformer-sharp: ^5.5.0
-    local-storage-fallback: ^4.1.2
-    patch-package: ^6.5.1
+    bootstrap-icons: 1.5.0
+    dotenv: 16.0.3
+    framer-motion: 4.1.17
+    gatsby: 5.5.0
+    gatsby-background-image: 1.6.0
+    gatsby-cli: 5.5.0
+    gatsby-plugin-emotion: 8.5.0
+    gatsby-plugin-gatsby-cloud: 5.5.0
+    gatsby-plugin-image: 3.5.0
+    gatsby-plugin-manifest: 5.5.0
+    gatsby-plugin-react-helmet: 6.5.0
+    gatsby-plugin-sass: 6.5.0
+    gatsby-plugin-sharp: 5.5.0
+    gatsby-plugin-styled-components: 6.5.0
+    gatsby-source-contentful: 8.5.0
+    gatsby-source-filesystem: 5.5.0
+    gatsby-source-github-api: 1.0.0
+    gatsby-transformer-remark: 6.5.0
+    gatsby-transformer-sharp: 5.5.0
+    local-storage-fallback: 4.1.2
+    patch-package: 6.5.1
     prettier: 2.8.3
-    prop-types: ^15.8.1
+    prop-types: 15.8.1
     react: latest
     react-dom: latest
-    react-h5-audio-player: ^3.8.6
-    react-helmet: ^6.1.0
-    react-reveal: ^1.2.2
-    sass: ^1.57.1
-    styled-components: ^5.3.6
+    react-h5-audio-player: 3.8.6
+    react-helmet: 6.1.0
+    react-reveal: 1.2.2
+    react-tsparticles: ^2.8.0
+    sass: 1.57.1
+    tsparticles: ^2.8.0
   languageName: unknown
   linkType: soft
 
@@ -12557,7 +12500,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-value-parser@npm:^4.0.2, postcss-value-parser@npm:^4.1.0, postcss-value-parser@npm:^4.2.0":
+"postcss-value-parser@npm:^4.1.0, postcss-value-parser@npm:^4.2.0":
   version: 4.2.0
   resolution: "postcss-value-parser@npm:4.2.0"
   checksum: 819ffab0c9d51cf0acbabf8996dffbfafbafa57afc0e4c98db88b67f2094cb44488758f06e5da95d7036f19556a4a732525e84289a425f4f6fd8e412a9d7442f
@@ -12716,7 +12659,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.5.10, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
+"prop-types@npm:15.8.1, prop-types@npm:^15.5.10, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -12967,7 +12910,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-h5-audio-player@npm:^3.8.6":
+"react-h5-audio-player@npm:3.8.6":
   version: 3.8.6
   resolution: "react-h5-audio-player@npm:3.8.6"
   dependencies:
@@ -12981,7 +12924,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-helmet@npm:^6.1.0":
+"react-helmet@npm:6.1.0":
   version: 6.1.0
   resolution: "react-helmet@npm:6.1.0"
   dependencies:
@@ -13009,7 +12952,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-reveal@npm:^1.2.2":
+"react-reveal@npm:1.2.2":
   version: 1.2.2
   resolution: "react-reveal@npm:1.2.2"
   dependencies:
@@ -13040,6 +12983,18 @@ __metadata:
   peerDependencies:
     react: ^16.3.0 || ^17.0.0 || ^18.0.0
   checksum: c5eb1f42b464fb093bca59aaae0f1b2060373a2aaff95275b8781493628cdbbb6acdd6014e7883782c65c361f35a30f28cc515d68a1263ddb39cbbc47110be53
+  languageName: node
+  linkType: hard
+
+"react-tsparticles@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "react-tsparticles@npm:2.8.0"
+  dependencies:
+    fast-deep-equal: ^3.1.3
+    tsparticles-engine: ^2.8.0
+  peerDependencies:
+    react: ">=16"
+  checksum: 00bbb70b67684b7c6e2453a9ccf5b1dc5a91ca6a9ffca62411e3cbbebbeed82c3d35a703c32ae86bb2c7ce377e84992cd96e2bf81b0b5b1ad3b7de8745ac6253
   languageName: node
   linkType: hard
 
@@ -13673,7 +13628,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.57.1":
+"sass@npm:1.57.1":
   version: 1.57.1
   resolution: "sass@npm:1.57.1"
   dependencies:
@@ -13879,13 +13834,6 @@ __metadata:
   version: 1.2.2
   resolution: "shallow-compare@npm:1.2.2"
   checksum: 900b9fd6931e1c5293ee67765b3a7043b10f83c147cf60c2869076e772189e9b25b664efa93cda09c411b08ff32e3614cf1b349f92e91ae14298ef1726ae0964
-  languageName: node
-  linkType: hard
-
-"shallowequal@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "shallowequal@npm:1.1.0"
-  checksum: f4c1de0837f106d2dbbfd5d0720a5d059d1c66b42b580965c8f06bb1db684be8783538b684092648c981294bf817869f743a066538771dbecb293df78f765e00
   languageName: node
   linkType: hard
 
@@ -14543,28 +14491,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"styled-components@npm:^5.3.6":
-  version: 5.3.6
-  resolution: "styled-components@npm:5.3.6"
-  dependencies:
-    "@babel/helper-module-imports": ^7.0.0
-    "@babel/traverse": ^7.4.5
-    "@emotion/is-prop-valid": ^1.1.0
-    "@emotion/stylis": ^0.8.4
-    "@emotion/unitless": ^0.7.4
-    babel-plugin-styled-components: ">= 1.12.0"
-    css-to-react-native: ^3.0.0
-    hoist-non-react-statics: ^3.0.0
-    shallowequal: ^1.1.0
-    supports-color: ^5.5.0
-  peerDependencies:
-    react: ">= 16.8.0"
-    react-dom: ">= 16.8.0"
-    react-is: ">= 16.8.0"
-  checksum: 68eac1e451be81d66739cf86de8ec9e72f46e7584aa359271761a2437468210bd7cf0a864281fc97dab08c32b35e6bf7513dc8b4104ed6b196cf8d65674dd289
-  languageName: node
-  linkType: hard
-
 "stylehacks@npm:^5.1.1":
   version: 5.1.1
   resolution: "stylehacks@npm:5.1.1"
@@ -14591,7 +14517,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"supports-color@npm:^5.3.0, supports-color@npm:^5.5.0":
+"supports-color@npm:^5.3.0":
   version: 5.5.0
   resolution: "supports-color@npm:5.5.0"
   dependencies:
@@ -14913,6 +14839,422 @@ __metadata:
   version: 2.4.1
   resolution: "tslib@npm:2.4.1"
   checksum: 19480d6e0313292bd6505d4efe096a6b31c70e21cf08b5febf4da62e95c265c8f571f7b36fcc3d1a17e068032f59c269fab3459d6cd3ed6949eafecf64315fca
+  languageName: node
+  linkType: hard
+
+"tsparticles-engine@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-engine@npm:2.8.0"
+  checksum: 100635a3456b62fc74baea157945d731ba6a02ad0e4e352ebbaf14f2a81d6c553e5807c93611c830676d8a0bd1c5e9a16039fbb1139d1e0a9611db175af50257
+  languageName: node
+  linkType: hard
+
+"tsparticles-interaction-external-attract@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-interaction-external-attract@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: 8a992bc6f00b3e9230ec4e2efd65a369bc262fabe67ecf3287a48cc3a36fcb631d1cae9b4519ee9347eb73160d70c1862f81cee44ef0a65ac497faa3a74c9c4d
+  languageName: node
+  linkType: hard
+
+"tsparticles-interaction-external-bounce@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-interaction-external-bounce@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: e3ec0915ce4422674fd88ef00aff8ea34cbdd3e78117c1ede0908dfbe55ecdbbb1eda6d61d54718d477cc89ac408d086e112ffb6d738f0d836e4c4bc7251caa9
+  languageName: node
+  linkType: hard
+
+"tsparticles-interaction-external-bubble@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-interaction-external-bubble@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: a8bb2caf30c664c662df34c79cbfe26c75112f4de65d46c65279cfeaf6fc50cf08e3ccebde60f2c3a6dadede8386b63c7cd79238f2101826c0a3d0490d98223f
+  languageName: node
+  linkType: hard
+
+"tsparticles-interaction-external-connect@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-interaction-external-connect@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: 34c7ed48abf8cf061225dfe181c8717855f424f7df636abbc14c396e839ee89d1a302d492f14ccbb88411c11b40ff5f822ed5f01ea14bd6e8db391abcec2acbd
+  languageName: node
+  linkType: hard
+
+"tsparticles-interaction-external-grab@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-interaction-external-grab@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: c64566a16ace2f01a1a9327a016990e9ed8a53ae8bf827b5129d2986a13b597589e93f3d852b17e735e920c5fc093e772a3e41fb384168a2c5cacab66ed0643d
+  languageName: node
+  linkType: hard
+
+"tsparticles-interaction-external-pause@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-interaction-external-pause@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: 40490d2f01859da2b04a5cca9da7ece18bcc4468e91304f9c8a209ea4f71eef6ac21403f4aff3c88d2e5ad0bf07312511fa01373c9acdc241e532a3b4c6dc07b
+  languageName: node
+  linkType: hard
+
+"tsparticles-interaction-external-push@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-interaction-external-push@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: 305a266fe1ded486382de5e0fafc7dec61f54d69bcce03fe13cab0d8408c0b9bbbf5ea01162c046c3f60888ce616f9f341a90ca520ee7541beb59c87a5a93a45
+  languageName: node
+  linkType: hard
+
+"tsparticles-interaction-external-remove@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-interaction-external-remove@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: ae375f0f56c9a88c083a1024b0f9ffab934f87cb5163897751300bcfada9e18889a316617d36deb7eb3005b1f818947a685da29c49c842834de1dde33b93b257
+  languageName: node
+  linkType: hard
+
+"tsparticles-interaction-external-repulse@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-interaction-external-repulse@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: 6671c6e1665b60869ec988b9f380013bd912d055541342f45c8a4876a13b0bf4f98a810a09cf642e15365887dd3696c76605cf9d266538778bc803e71edcae0e
+  languageName: node
+  linkType: hard
+
+"tsparticles-interaction-external-slow@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-interaction-external-slow@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: 098fb3eaef28a1b00863ff79d8e08cc014a23da4158829d68025e5ad4f5e65f5cd54ffa7b3082c6bdf6ac15c389cb7b4cfa6cd9b6f2db817cc7421d40ad084a4
+  languageName: node
+  linkType: hard
+
+"tsparticles-interaction-external-trail@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-interaction-external-trail@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: 69f073758aa3825728a008cf6d6506eca24539061999eb011e8cf618901b70236bd629b106abfcfd384f3bb50b66a3e805a754cbb03fc4957f579a2b5831b3ee
+  languageName: node
+  linkType: hard
+
+"tsparticles-interaction-particles-attract@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-interaction-particles-attract@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: 0ea5d1807a3519d9157e3d316fd1e7783ae923279a3ef215e3797c5601891f0f69519c5b616ad2e6a807f67156b03f3a0e5ab92c8ba2733f3927ae62a11bb9a6
+  languageName: node
+  linkType: hard
+
+"tsparticles-interaction-particles-collisions@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-interaction-particles-collisions@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: e35e65264d57d10558879fe0344c210c121d54c5b2888f1857dc2efa7ef6d2f4fd96bcee51a21934c0c7cef156f4e943f9327ea42fc57a5a73c74f7ee5bf3812
+  languageName: node
+  linkType: hard
+
+"tsparticles-interaction-particles-links@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-interaction-particles-links@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: ac7ec514ec0c3714b52da9c718c7573ad448d6edcc96ca4b79fa12ab5f1ea4e5d61c197a8460ded66d5c4a44dddd06b9e54bb28658f7aa734a70a1d7013ea9e4
+  languageName: node
+  linkType: hard
+
+"tsparticles-move-base@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-move-base@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: f48155ad80a1a5b971bb30932bdda2b5c8476062516b17641036ed6ad3cacb80abbe6ba338673ff5e9b8f7782851112d426077952e393a9b737133abc09c89a9
+  languageName: node
+  linkType: hard
+
+"tsparticles-move-parallax@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-move-parallax@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: 0aef235da17914bf980caae6f17846e0902ce45bb41c3be2ceb968038b55b1a607690dda3a202a99b1e7f9df39408ce6c1edbc1a7357524669c7cba71879588c
+  languageName: node
+  linkType: hard
+
+"tsparticles-particles.js@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-particles.js@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: 0b30a0ce316f4acbf07c9034141e2a78fd23228297c60600503bbb997bac63862d60a2b18e1e6069837fa81ba092bb9dec1b1a624ea6c7c5c2669d78a2220444
+  languageName: node
+  linkType: hard
+
+"tsparticles-plugin-absorbers@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-plugin-absorbers@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: ae970f3e6aea07dadb00f35151eb693a35c23307d569f77d9cd75190003f02644f2d58c497f72d0cc62263159f3ae4a56f870c84167ff8d71d2c1095a8ff3517
+  languageName: node
+  linkType: hard
+
+"tsparticles-plugin-easing-quad@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-plugin-easing-quad@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: 60b29b48a99e8c217d0e45d6747816865bb0109af22971b0c7748965586555eecd3453b0c9c95687956b2286b54399f0500c53d10010891f75a3eaee9e62874c
+  languageName: node
+  linkType: hard
+
+"tsparticles-plugin-emitters@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-plugin-emitters@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: c6e22857396ed418643159d68f165085c77e1a14a01471178014578febe70fb4efa9665f299f33c7701e7822e6d054989b30534aca6a0b17a354ef87f9e6317b
+  languageName: node
+  linkType: hard
+
+"tsparticles-shape-circle@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-shape-circle@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: 391a1f018a6a4a01217acfc58f6f2b73b4ded7a7be26b45c05afb4c74d994fc186f5c2ede17a3f3dd70381f4c426c825f1c638d828861fd959c30e39cc191fc0
+  languageName: node
+  linkType: hard
+
+"tsparticles-shape-image@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-shape-image@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: 48fd2aba863314d6611f612a6475acb9ce44d8deac72930b32d7aa460469901c4bed1a78936b63d7695f35a536a03b656f1075e1188ca07902e57e49a0e1b5e0
+  languageName: node
+  linkType: hard
+
+"tsparticles-shape-line@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-shape-line@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: a6c9c0f3ce6804cd886e5c8aaa54e5f875b56412dc7183fa17595d4c8230fef884c1cb2909fd6348ec94326f31fa6ea8ea5dc84f984930c9980c14550a51bf0e
+  languageName: node
+  linkType: hard
+
+"tsparticles-shape-polygon@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-shape-polygon@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: 4278e229c06b48de53bbc03c48b328d0eda4310691d054db3ba342642d02212c311cb939e67b33263fae38e17af9a32e8e893b82bf9fcfd8e31ec7381b15c168
+  languageName: node
+  linkType: hard
+
+"tsparticles-shape-square@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-shape-square@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: aa256d97eb30cc9f2ab665f3e3350e77e53c1a48704cf61c968ba13c5275112002fa2b58473793915d11d5fbe6be5f4bd8cd87e048849614ba9959679faf9e77
+  languageName: node
+  linkType: hard
+
+"tsparticles-shape-star@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-shape-star@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: 920e6f5a8d4abbb4161a1f23f5e734e4cf7bc463444460a89ca6331db9b3c5291da2733e2d714ea6dc4245bddee01496bcb40a5f72ec5f3a4841c43e23bdc5a9
+  languageName: node
+  linkType: hard
+
+"tsparticles-shape-text@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-shape-text@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: 0b18d09028ff11d3ce8eb27b041b14b74bf85417d39bd5b10a7fec8431c1cf1119107839feb90d0b13a42f5fe32d19910c4bfaa75cb138eb63e00b1f1639d453
+  languageName: node
+  linkType: hard
+
+"tsparticles-slim@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-slim@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+    tsparticles-interaction-external-attract: ^2.8.0
+    tsparticles-interaction-external-bounce: ^2.8.0
+    tsparticles-interaction-external-bubble: ^2.8.0
+    tsparticles-interaction-external-connect: ^2.8.0
+    tsparticles-interaction-external-grab: ^2.8.0
+    tsparticles-interaction-external-pause: ^2.8.0
+    tsparticles-interaction-external-push: ^2.8.0
+    tsparticles-interaction-external-remove: ^2.8.0
+    tsparticles-interaction-external-repulse: ^2.8.0
+    tsparticles-interaction-external-slow: ^2.8.0
+    tsparticles-interaction-particles-attract: ^2.8.0
+    tsparticles-interaction-particles-collisions: ^2.8.0
+    tsparticles-interaction-particles-links: ^2.8.0
+    tsparticles-move-base: ^2.8.0
+    tsparticles-move-parallax: ^2.8.0
+    tsparticles-particles.js: ^2.8.0
+    tsparticles-plugin-easing-quad: ^2.8.0
+    tsparticles-shape-circle: ^2.8.0
+    tsparticles-shape-image: ^2.8.0
+    tsparticles-shape-line: ^2.8.0
+    tsparticles-shape-polygon: ^2.8.0
+    tsparticles-shape-square: ^2.8.0
+    tsparticles-shape-star: ^2.8.0
+    tsparticles-shape-text: ^2.8.0
+    tsparticles-updater-angle: ^2.8.0
+    tsparticles-updater-color: ^2.8.0
+    tsparticles-updater-life: ^2.8.0
+    tsparticles-updater-opacity: ^2.8.0
+    tsparticles-updater-out-modes: ^2.8.0
+    tsparticles-updater-size: ^2.8.0
+    tsparticles-updater-stroke-color: ^2.8.0
+  checksum: 1c5e835a84811920f352f201a87639be323f5edc883936a6f43162f4e5bf75dd6b1b1c18ab60187f3ee04a76dc52cf42d315e5d82cc585678cbcfac4a253a2be
+  languageName: node
+  linkType: hard
+
+"tsparticles-updater-angle@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-updater-angle@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: 574e8e6b0281e097e2c2aec6a19496b703a5bc4d82371ca93acf4920e3bb67ffc41cc03eb9eb09d50e6da94f48beb85e77c0fe7051c6e24c0e6154fea573ad78
+  languageName: node
+  linkType: hard
+
+"tsparticles-updater-color@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-updater-color@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: abc99d7aab6508b8023f0d375696d6d39dee096e2bc22d2f6d7b4495433430d7c8f3e5f2503cc25b53be0e698ef4811a87622b192a8a85fb141805fd8d433a54
+  languageName: node
+  linkType: hard
+
+"tsparticles-updater-destroy@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-updater-destroy@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: e0c47cd043840e5a5ff0b574da19efb371ffc78a82c38c235ea3f166be6095e37d89fdd27fd61f62448d007182f45d54bbc8b0c465f528722d3bc8ff76a68eb3
+  languageName: node
+  linkType: hard
+
+"tsparticles-updater-life@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-updater-life@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: 42a1732d922be474c2098c9b2ff4ce4a4c6d32ffdb45cd7641da571f93dae5575949b5cd24e5a4762710d7d536ce5a8b4679525837e5ecca1f0b370da6d3f040
+  languageName: node
+  linkType: hard
+
+"tsparticles-updater-opacity@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-updater-opacity@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: 5897ad7144f59cecd1d6a69466d01a5d58e5f6ecd912b60f7371aff4321166bdbc5b13e0971b5a08cc2bd4e832008093418d493c2a5307b8087fae1867d2a15f
+  languageName: node
+  linkType: hard
+
+"tsparticles-updater-out-modes@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-updater-out-modes@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: 38564328405f50b8bdfc394f982b135031d6e9b967d9b76eb79984847b49a1507e8258d6a2de873ded3d89c3ef9b09dba767cd08a703c4459df2af1e44de8e77
+  languageName: node
+  linkType: hard
+
+"tsparticles-updater-roll@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-updater-roll@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: 0dc897f1dc8fd54786db0465cde7b6283d2fea4dbadb4fd50a800ec6fd70dc7e9b0e6de2edcb4520d2af905158adcb291a3475e4e4cfce3ba8d7143bf6f61554
+  languageName: node
+  linkType: hard
+
+"tsparticles-updater-size@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-updater-size@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: 99465600be5353dfb4aa49313f1caa092828068996b333ce2059d8dc8dc75b242d69ab9390886a968b670a4cdf109835078afb365f1b5579e4010d9959b05880
+  languageName: node
+  linkType: hard
+
+"tsparticles-updater-stroke-color@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-updater-stroke-color@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: 85c005f334c9cdd43c411eae63dc654d33fc183d572ee61bc116290fee870e6cf648dac359021cb95946ee4f289b20bf721f9c045628a34067b6b58ab0f4afe2
+  languageName: node
+  linkType: hard
+
+"tsparticles-updater-tilt@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-updater-tilt@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: 25529b456c453ca7bcf0bfc8d1bbbb7b06a9cf5dec1346d74ae321e6410ffdf37cdc5b6be4580276a436a0d77dca80490f0cff02965901c5fdf8452c06510441
+  languageName: node
+  linkType: hard
+
+"tsparticles-updater-twinkle@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-updater-twinkle@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: 20a86b605f7766b542d28242e928eab488d87d081cd6b9e53c5b6fa2109b3f1bba0eb8535d8c94ff5918c917f73297618f402ceca1071329ba21168eb1562c49
+  languageName: node
+  linkType: hard
+
+"tsparticles-updater-wobble@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles-updater-wobble@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+  checksum: 390f50527904e1a55b08b7d2507b1e6b1c722ab860b9c048e1bc660597f48fd9766970ffc5f33929cf3b3e6b3732c8ac527cef64ae0c71132c44d097a1d168f4
+  languageName: node
+  linkType: hard
+
+"tsparticles@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "tsparticles@npm:2.8.0"
+  dependencies:
+    tsparticles-engine: ^2.8.0
+    tsparticles-interaction-external-trail: ^2.8.0
+    tsparticles-plugin-absorbers: ^2.8.0
+    tsparticles-plugin-emitters: ^2.8.0
+    tsparticles-slim: ^2.8.0
+    tsparticles-updater-destroy: ^2.8.0
+    tsparticles-updater-roll: ^2.8.0
+    tsparticles-updater-tilt: ^2.8.0
+    tsparticles-updater-twinkle: ^2.8.0
+    tsparticles-updater-wobble: ^2.8.0
+  checksum: 839aaec65a243280c9a9f431bf06faa7562b1222eda86f993531637ac2181ac905249e035d470846337ad7b10ab5da73e51a24c07549b19fe167d9536adc799e
   languageName: node
   linkType: hard
 

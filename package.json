@@ -12,7 +12,8 @@
     "start": " BROWSER=\"Firefox Developer Edition\" gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@emotion/react": "11.4.0",
@@ -46,8 +47,9 @@
     "react-h5-audio-player": "3.8.6",
     "react-helmet": "6.1.0",
     "react-reveal": "1.2.2",
+    "react-tsparticles": "^2.8.0",
     "sass": "1.57.1",
-    "styled-components": "5.3.6"
+    "tsparticles": "^2.8.0"
   },
   "devDependencies": {
     "prettier": "2.8.3"
